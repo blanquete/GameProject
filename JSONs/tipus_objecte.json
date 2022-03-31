@@ -1,0 +1,32 @@
+[
+    {
+        "id" : "Weapon",
+        "name" : "Arma (Weapon)",
+        "description" : "Sirve para inflinjir daño"
+
+    },
+    {
+        "id" : "Potion",
+        "name" : "Pocion (potion)",
+        "description" : "Tiene atributos especiales aplicables a los jugadores y monstruos"
+
+    },
+    {
+        "id" : "Key",
+        "name" : "Llave (Key)",
+        "description" : "Abre o desbloquea algo"
+
+    },
+    {
+        "id" : "Tool",
+        "name" : "Herramienta (Tool)",
+        "description" : "Necesaria para realizar acciones concretas"
+
+    },
+    {
+        "id" : "Armor",
+        "name" : "Armadura (Armor)",
+        "description" : "Sirve para recibir menos daño"
+
+    }
+]
