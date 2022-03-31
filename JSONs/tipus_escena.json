@@ -1,0 +1,26 @@
+[
+    {
+        "id" : "load_screen",
+        "name" : "Pantalla de Carga",
+        "description" : "Estas escenas..."
+
+    },
+    {
+        "id" : "road_scene",
+        "name" : "Pantalla de Camino",
+        "description" : "Estas escenas..."
+
+    },
+    {
+        "id" : "room_scene",
+        "name" : "Habitacion/Sala",
+        "description" : "Estas escenas..."
+
+    },
+    {
+        "id" : "map_scene",
+        "name" : "Mapa",
+        "description" : "Estas escenas..."
+
+    }
+]
