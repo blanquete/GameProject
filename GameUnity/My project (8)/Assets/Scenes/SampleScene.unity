@@ -504,7 +504,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Salir
+  m_Text: 'Sortir
+
+'
 --- !u!222 &913789419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1193,7 +1195,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Opciones
+  m_Text: Opcions
 --- !u!222 &1643131765
 CanvasRenderer:
   m_ObjectHideFlags: 0

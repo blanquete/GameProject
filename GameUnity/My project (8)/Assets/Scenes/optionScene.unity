@@ -752,7 +752,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pantalla Completa
+  m_Text: 'Finestra Completa
+
+'
 --- !u!222 &837912051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1236,7 +1238,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: OPCIONES
+  m_Text: 'OPCIONS
+
+'
 --- !u!222 &1020229793
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1466,7 +1470,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Resoluci\xF3n"
+  m_Text: "Resoluci\xF3"
 --- !u!222 &1166495930
 CanvasRenderer:
   m_ObjectHideFlags: 0
