@@ -1,0 +1,671 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - .collabignore
+    - Assets/Clean Vector Icons.meta
+    - Assets/Clean Vector Icons/Demo.unity
+    - Assets/Clean Vector Icons/Demo.unity.meta
+    - Assets/Clean Vector Icons/T_0_empty_.png
+    - Assets/Clean Vector Icons/T_0_empty_.png.meta
+    - Assets/Clean Vector Icons/T_10_!_.png
+    - Assets/Clean Vector Icons/T_10_!_.png.meta
+    - Assets/Clean Vector Icons/T_10_arrow_rounded_down_.png
+    - Assets/Clean Vector Icons/T_10_arrow_rounded_down_.png.meta
+    - Assets/Clean Vector Icons/T_10_cursor_!_al_.png
+    - Assets/Clean Vector Icons/T_10_cursor_!_al_.png.meta
+    - Assets/Clean Vector Icons/T_10_flag_destroyed_.png
+    - Assets/Clean Vector Icons/T_10_flag_destroyed_.png.meta
+    - Assets/Clean Vector Icons/T_10_hammer_.png
+    - Assets/Clean Vector Icons/T_10_hammer_.png.meta
+    - Assets/Clean Vector Icons/T_10_hand_fire_.png
+    - Assets/Clean Vector Icons/T_10_hand_fire_.png.meta
+    - Assets/Clean Vector Icons/T_10_previoust_.png
+    - Assets/Clean Vector Icons/T_10_previoust_.png.meta
+    - Assets/Clean Vector Icons/T_10_rain_cloud_.png
+    - Assets/Clean Vector Icons/T_10_rain_cloud_.png.meta
+    - Assets/Clean Vector Icons/T_10_silhouette_-_.png
+    - Assets/Clean Vector Icons/T_10_silhouette_-_.png.meta
+    - Assets/Clean Vector Icons/T_11_arrow_rounded_left_.png
+    - Assets/Clean Vector Icons/T_11_arrow_rounded_left_.png.meta
+    - Assets/Clean Vector Icons/T_11_cursor_star_al_.png
+    - Assets/Clean Vector Icons/T_11_cursor_star_al_.png.meta
+    - Assets/Clean Vector Icons/T_11_home_.png
+    - Assets/Clean Vector Icons/T_11_home_.png.meta
+    - Assets/Clean Vector Icons/T_11_no_.png
+    - Assets/Clean Vector Icons/T_11_no_.png.meta
+    - Assets/Clean Vector Icons/T_11_pickaxe_.png
+    - Assets/Clean Vector Icons/T_11_pickaxe_.png.meta
+    - Assets/Clean Vector Icons/T_11_silhouette_heart_.png
+    - Assets/Clean Vector Icons/T_11_silhouette_heart_.png.meta
+    - Assets/Clean Vector Icons/T_11_star_.png
+    - Assets/Clean Vector Icons/T_11_star_.png.meta
+    - Assets/Clean Vector Icons/T_12_arrow_rounded_right_.png
+    - Assets/Clean Vector Icons/T_12_arrow_rounded_right_.png.meta
+    - Assets/Clean Vector Icons/T_12_arrow_up_.png
+    - Assets/Clean Vector Icons/T_12_arrow_up_.png.meta
+    - Assets/Clean Vector Icons/T_12_cursor_arrow_up_al_.png
+    - Assets/Clean Vector Icons/T_12_cursor_arrow_up_al_.png.meta
+    - Assets/Clean Vector Icons/T_12_ok_.png
+    - Assets/Clean Vector Icons/T_12_ok_.png.meta
+    - Assets/Clean Vector Icons/T_12_spit_.png
+    - Assets/Clean Vector Icons/T_12_spit_.png.meta
+    - Assets/Clean Vector Icons/T_12_tent_.png
+    - Assets/Clean Vector Icons/T_12_tent_.png.meta
+    - Assets/Clean Vector Icons/T_13_arrow_down_.png
+    - Assets/Clean Vector Icons/T_13_arrow_down_.png.meta
+    - Assets/Clean Vector Icons/T_13_axe_.png
+    - Assets/Clean Vector Icons/T_13_axe_.png.meta
+    - Assets/Clean Vector Icons/T_13_campfire_.png
+    - Assets/Clean Vector Icons/T_13_campfire_.png.meta
+    - Assets/Clean Vector Icons/T_13_cursor_arrow_down_al_.png
+    - Assets/Clean Vector Icons/T_13_cursor_arrow_down_al_.png.meta
+    - Assets/Clean Vector Icons/T_13_points_ver_.png
+    - Assets/Clean Vector Icons/T_13_points_ver_.png.meta
+    - Assets/Clean Vector Icons/T_14_key_.png
+    - Assets/Clean Vector Icons/T_14_key_.png.meta
+    - Assets/Clean Vector Icons/T_14_points_hor_.png
+    - Assets/Clean Vector Icons/T_14_points_hor_.png.meta
+    - Assets/Clean Vector Icons/T_14_wrench_.png
+    - Assets/Clean Vector Icons/T_14_wrench_.png.meta
+    - Assets/Clean Vector Icons/T_15_beer_.png
+    - Assets/Clean Vector Icons/T_15_beer_.png.meta
+    - Assets/Clean Vector Icons/T_15_list_.png
+    - Assets/Clean Vector Icons/T_15_list_.png.meta
+    - Assets/Clean Vector Icons/T_16_crown_.png
+    - Assets/Clean Vector Icons/T_16_crown_.png.meta
+    - Assets/Clean Vector Icons/T_16_message_.png
+    - Assets/Clean Vector Icons/T_16_message_.png.meta
+    - Assets/Clean Vector Icons/T_17_medal_star_.png
+    - Assets/Clean Vector Icons/T_17_medal_star_.png.meta
+    - Assets/Clean Vector Icons/T_17_message_points_.png
+    - Assets/Clean Vector Icons/T_17_message_points_.png.meta
+    - Assets/Clean Vector Icons/T_18_medal_first_.png
+    - Assets/Clean Vector Icons/T_18_medal_first_.png.meta
+    - Assets/Clean Vector Icons/T_18_next2_.png
+    - Assets/Clean Vector Icons/T_18_next2_.png.meta
+    - Assets/Clean Vector Icons/T_19_medal_second_.png
+    - Assets/Clean Vector Icons/T_19_medal_second_.png.meta
+    - Assets/Clean Vector Icons/T_19_previoust2_.png
+    - Assets/Clean Vector Icons/T_19_previoust2_.png.meta
+    - Assets/Clean Vector Icons/T_1_anvil_.png
+    - Assets/Clean Vector Icons/T_1_anvil_.png.meta
+    - Assets/Clean Vector Icons/T_1_arrow_empty_up_.png
+    - Assets/Clean Vector Icons/T_1_arrow_empty_up_.png.meta
+    - Assets/Clean Vector Icons/T_1_bottle_empty_.png
+    - Assets/Clean Vector Icons/T_1_bottle_empty_.png.meta
+    - Assets/Clean Vector Icons/T_1_column_.png
+    - Assets/Clean Vector Icons/T_1_column_.png.meta
+    - Assets/Clean Vector Icons/T_1_cursor_.png
+    - Assets/Clean Vector Icons/T_1_cursor_.png.meta
+    - Assets/Clean Vector Icons/T_1_cursor_al.png
+    - Assets/Clean Vector Icons/T_1_cursor_al.png.meta
+    - Assets/Clean Vector Icons/T_1_eye_.png
+    - Assets/Clean Vector Icons/T_1_eye_.png.meta
+    - Assets/Clean Vector Icons/T_1_fire_.png
+    - Assets/Clean Vector Icons/T_1_fire_.png.meta
+    - Assets/Clean Vector Icons/T_1_head_samurai_.png
+    - Assets/Clean Vector Icons/T_1_head_samurai_.png.meta
+    - Assets/Clean Vector Icons/T_1_letter_.png
+    - Assets/Clean Vector Icons/T_1_letter_.png.meta
+    - Assets/Clean Vector Icons/T_1_magnifier_.png
+    - Assets/Clean Vector Icons/T_1_magnifier_.png.meta
+    - Assets/Clean Vector Icons/T_1_magnifier_al_.png
+    - Assets/Clean Vector Icons/T_1_magnifier_al_.png.meta
+    - Assets/Clean Vector Icons/T_1_moon_full_.png
+    - Assets/Clean Vector Icons/T_1_moon_full_.png.meta
+    - Assets/Clean Vector Icons/T_1_scroll_.png
+    - Assets/Clean Vector Icons/T_1_scroll_.png.meta
+    - Assets/Clean Vector Icons/T_1_shield_.png
+    - Assets/Clean Vector Icons/T_1_shield_.png.meta
+    - Assets/Clean Vector Icons/T_1_sword90_.png
+    - Assets/Clean Vector Icons/T_1_sword90_.png.meta
+    - Assets/Clean Vector Icons/T_20_medal_third_.png
+    - Assets/Clean Vector Icons/T_20_medal_third_.png.meta
+    - Assets/Clean Vector Icons/T_20_stop_.png
+    - Assets/Clean Vector Icons/T_20_stop_.png.meta
+    - Assets/Clean Vector Icons/T_21_doorlock_close_.png
+    - Assets/Clean Vector Icons/T_21_doorlock_close_.png.meta
+    - Assets/Clean Vector Icons/T_22_doorlock_open_.png
+    - Assets/Clean Vector Icons/T_22_doorlock_open_.png.meta
+    - Assets/Clean Vector Icons/T_23_gear_.png
+    - Assets/Clean Vector Icons/T_23_gear_.png.meta
+    - Assets/Clean Vector Icons/T_24_diamond_.png
+    - Assets/Clean Vector Icons/T_24_diamond_.png.meta
+    - Assets/Clean Vector Icons/T_25_compas_.png
+    - Assets/Clean Vector Icons/T_25_compas_.png.meta
+    - Assets/Clean Vector Icons/T_26_clock_.png
+    - Assets/Clean Vector Icons/T_26_clock_.png.meta
+    - Assets/Clean Vector Icons/T_27_grave_.png
+    - Assets/Clean Vector Icons/T_27_grave_.png.meta
+    - Assets/Clean Vector Icons/T_28_bread_.png
+    - Assets/Clean Vector Icons/T_28_bread_.png.meta
+    - Assets/Clean Vector Icons/T_2_+_.png
+    - Assets/Clean Vector Icons/T_2_+_.png.meta
+    - Assets/Clean Vector Icons/T_2_arrow_empty_down_.png
+    - Assets/Clean Vector Icons/T_2_arrow_empty_down_.png.meta
+    - Assets/Clean Vector Icons/T_2_bottle_half_.png
+    - Assets/Clean Vector Icons/T_2_bottle_half_.png.meta
+    - Assets/Clean Vector Icons/T_2_coin_.png
+    - Assets/Clean Vector Icons/T_2_coin_.png.meta
+    - Assets/Clean Vector Icons/T_2_column_cross_.png
+    - Assets/Clean Vector Icons/T_2_column_cross_.png.meta
+    - Assets/Clean Vector Icons/T_2_cursor_+_al_.png
+    - Assets/Clean Vector Icons/T_2_cursor_+_al_.png.meta
+    - Assets/Clean Vector Icons/T_2_eye_light_.png
+    - Assets/Clean Vector Icons/T_2_eye_light_.png.meta
+    - Assets/Clean Vector Icons/T_2_head_gladiator_.png
+    - Assets/Clean Vector Icons/T_2_head_gladiator_.png.meta
+    - Assets/Clean Vector Icons/T_2_letter_open_.png
+    - Assets/Clean Vector Icons/T_2_letter_open_.png.meta
+    - Assets/Clean Vector Icons/T_2_lighthing_.png
+    - Assets/Clean Vector Icons/T_2_lighthing_.png.meta
+    - Assets/Clean Vector Icons/T_2_magnifier_+_.png
+    - Assets/Clean Vector Icons/T_2_magnifier_+_.png.meta
+    - Assets/Clean Vector Icons/T_2_magnifier_+_al_.png
+    - Assets/Clean Vector Icons/T_2_magnifier_+_al_.png.meta
+    - Assets/Clean Vector Icons/T_2_moon_empty_.png
+    - Assets/Clean Vector Icons/T_2_moon_empty_.png.meta
+    - Assets/Clean Vector Icons/T_2_scroll_open_.png
+    - Assets/Clean Vector Icons/T_2_scroll_open_.png.meta
+    - Assets/Clean Vector Icons/T_2_shield_eye_.png
+    - Assets/Clean Vector Icons/T_2_shield_eye_.png.meta
+    - Assets/Clean Vector Icons/T_2_sword45_.png
+    - Assets/Clean Vector Icons/T_2_sword45_.png.meta
+    - Assets/Clean Vector Icons/T_3_-_.png
+    - Assets/Clean Vector Icons/T_3_-_.png.meta
+    - Assets/Clean Vector Icons/T_3_arrow_empty_left_.png
+    - Assets/Clean Vector Icons/T_3_arrow_empty_left_.png.meta
+    - Assets/Clean Vector Icons/T_3_bottle_full_.png
+    - Assets/Clean Vector Icons/T_3_bottle_full_.png.meta
+    - Assets/Clean Vector Icons/T_3_coins_.png
+    - Assets/Clean Vector Icons/T_3_coins_.png.meta
+    - Assets/Clean Vector Icons/T_3_column_double_cross_.png
+    - Assets/Clean Vector Icons/T_3_column_double_cross_.png.meta
+    - Assets/Clean Vector Icons/T_3_cursor_-_al_.png
+    - Assets/Clean Vector Icons/T_3_cursor_-_al_.png.meta
+    - Assets/Clean Vector Icons/T_3_eye_bored_.png
+    - Assets/Clean Vector Icons/T_3_eye_bored_.png.meta
+    - Assets/Clean Vector Icons/T_3_head_wiking_.png
+    - Assets/Clean Vector Icons/T_3_head_wiking_.png.meta
+    - Assets/Clean Vector Icons/T_3_letter_eye_.png
+    - Assets/Clean Vector Icons/T_3_letter_eye_.png.meta
+    - Assets/Clean Vector Icons/T_3_magic_fire_.png
+    - Assets/Clean Vector Icons/T_3_magic_fire_.png.meta
+    - Assets/Clean Vector Icons/T_3_magnifier_-_.png
+    - Assets/Clean Vector Icons/T_3_magnifier_-_.png.meta
+    - Assets/Clean Vector Icons/T_3_magnifier_-_al_.png
+    - Assets/Clean Vector Icons/T_3_magnifier_-_al_.png.meta
+    - Assets/Clean Vector Icons/T_3_scroll_open_cut_.png
+    - Assets/Clean Vector Icons/T_3_scroll_open_cut_.png.meta
+    - Assets/Clean Vector Icons/T_3_shield_magic_.png
+    - Assets/Clean Vector Icons/T_3_shield_magic_.png.meta
+    - Assets/Clean Vector Icons/T_3_sun_full_.png
+    - Assets/Clean Vector Icons/T_3_sun_full_.png.meta
+    - Assets/Clean Vector Icons/T_3_sword_cut_.png
+    - Assets/Clean Vector Icons/T_3_sword_cut_.png.meta
+    - Assets/Clean Vector Icons/T_4_=_.png
+    - Assets/Clean Vector Icons/T_4_=_.png.meta
+    - Assets/Clean Vector Icons/T_4_arrow_empty_right_.png
+    - Assets/Clean Vector Icons/T_4_arrow_empty_right_.png.meta
+    - Assets/Clean Vector Icons/T_4_bottle_small_empty_.png
+    - Assets/Clean Vector Icons/T_4_bottle_small_empty_.png.meta
+    - Assets/Clean Vector Icons/T_4_coin_bag1_.png
+    - Assets/Clean Vector Icons/T_4_coin_bag1_.png.meta
+    - Assets/Clean Vector Icons/T_4_column_sound1_.png
+    - Assets/Clean Vector Icons/T_4_column_sound1_.png.meta
+    - Assets/Clean Vector Icons/T_4_cursor_=_al_.png
+    - Assets/Clean Vector Icons/T_4_cursor_=_al_.png.meta
+    - Assets/Clean Vector Icons/T_4_eye_bleed_.png
+    - Assets/Clean Vector Icons/T_4_eye_bleed_.png.meta
+    - Assets/Clean Vector Icons/T_4_frost_.png
+    - Assets/Clean Vector Icons/T_4_frost_.png.meta
+    - Assets/Clean Vector Icons/T_4_head_knignt_.png
+    - Assets/Clean Vector Icons/T_4_head_knignt_.png.meta
+    - Assets/Clean Vector Icons/T_4_letter_+_.png
+    - Assets/Clean Vector Icons/T_4_letter_+_.png.meta
+    - Assets/Clean Vector Icons/T_4_magnifier_eye_.png
+    - Assets/Clean Vector Icons/T_4_magnifier_eye_.png.meta
+    - Assets/Clean Vector Icons/T_4_magnifier_eye_al_.png
+    - Assets/Clean Vector Icons/T_4_magnifier_eye_al_.png.meta
+    - Assets/Clean Vector Icons/T_4_scroll_+_.png
+    - Assets/Clean Vector Icons/T_4_scroll_+_.png.meta
+    - Assets/Clean Vector Icons/T_4_shield_bezel_.png
+    - Assets/Clean Vector Icons/T_4_shield_bezel_.png.meta
+    - Assets/Clean Vector Icons/T_4_sun_half_.png
+    - Assets/Clean Vector Icons/T_4_sun_half_.png.meta
+    - Assets/Clean Vector Icons/T_4_sword_saw_.png
+    - Assets/Clean Vector Icons/T_4_sword_saw_.png.meta
+    - Assets/Clean Vector Icons/T_5_arrow_up_.png
+    - Assets/Clean Vector Icons/T_5_arrow_up_.png.meta
+    - Assets/Clean Vector Icons/T_5_bottle_small_half_.png
+    - Assets/Clean Vector Icons/T_5_bottle_small_half_.png.meta
+    - Assets/Clean Vector Icons/T_5_coin_bag2_.png
+    - Assets/Clean Vector Icons/T_5_coin_bag2_.png.meta
+    - Assets/Clean Vector Icons/T_5_column_sound2_.png
+    - Assets/Clean Vector Icons/T_5_column_sound2_.png.meta
+    - Assets/Clean Vector Icons/T_5_cursor_x_al_.png
+    - Assets/Clean Vector Icons/T_5_cursor_x_al_.png.meta
+    - Assets/Clean Vector Icons/T_5_drop_.png
+    - Assets/Clean Vector Icons/T_5_drop_.png.meta
+    - Assets/Clean Vector Icons/T_5_eye_cross_.png
+    - Assets/Clean Vector Icons/T_5_eye_cross_.png.meta
+    - Assets/Clean Vector Icons/T_5_head_rogure_.png
+    - Assets/Clean Vector Icons/T_5_head_rogure_.png.meta
+    - Assets/Clean Vector Icons/T_5_letter_-_.png
+    - Assets/Clean Vector Icons/T_5_letter_-_.png.meta
+    - Assets/Clean Vector Icons/T_5_magnifier_eye_crossed_.png
+    - Assets/Clean Vector Icons/T_5_magnifier_eye_crossed_.png.meta
+    - Assets/Clean Vector Icons/T_5_magnifier_eye_crossed_al_.png
+    - Assets/Clean Vector Icons/T_5_magnifier_eye_crossed_al_.png.meta
+    - Assets/Clean Vector Icons/T_5_scroll_-_.png
+    - Assets/Clean Vector Icons/T_5_scroll_-_.png.meta
+    - Assets/Clean Vector Icons/T_5_sun_empty_.png
+    - Assets/Clean Vector Icons/T_5_sun_empty_.png.meta
+    - Assets/Clean Vector Icons/T_5_sword_.png
+    - Assets/Clean Vector Icons/T_5_sword_.png.meta
+    - Assets/Clean Vector Icons/T_5_x_.png
+    - Assets/Clean Vector Icons/T_5_x_.png.meta
+    - Assets/Clean Vector Icons/T_6_arrow_down_.png
+    - Assets/Clean Vector Icons/T_6_arrow_down_.png.meta
+    - Assets/Clean Vector Icons/T_6_barrel_.png
+    - Assets/Clean Vector Icons/T_6_barrel_.png.meta
+    - Assets/Clean Vector Icons/T_6_bottle_small_full_.png
+    - Assets/Clean Vector Icons/T_6_bottle_small_full_.png.meta
+    - Assets/Clean Vector Icons/T_6_cloud_.png
+    - Assets/Clean Vector Icons/T_6_cloud_.png.meta
+    - Assets/Clean Vector Icons/T_6_continue_.png
+    - Assets/Clean Vector Icons/T_6_continue_.png.meta
+    - Assets/Clean Vector Icons/T_6_cursor_devide_al_.png
+    - Assets/Clean Vector Icons/T_6_cursor_devide_al_.png.meta
+    - Assets/Clean Vector Icons/T_6_devide_.png
+    - Assets/Clean Vector Icons/T_6_devide_.png.meta
+    - Assets/Clean Vector Icons/T_6_head_king_.png
+    - Assets/Clean Vector Icons/T_6_head_king_.png.meta
+    - Assets/Clean Vector Icons/T_6_head_scull_.png
+    - Assets/Clean Vector Icons/T_6_head_scull_.png.meta
+    - Assets/Clean Vector Icons/T_6_mace_.png
+    - Assets/Clean Vector Icons/T_6_mace_.png.meta
+    - Assets/Clean Vector Icons/T_6_scroll_eye_.png
+    - Assets/Clean Vector Icons/T_6_scroll_eye_.png.meta
+    - Assets/Clean Vector Icons/T_6_stone_.png
+    - Assets/Clean Vector Icons/T_6_stone_.png.meta
+    - Assets/Clean Vector Icons/T_7_arrow_left_.png
+    - Assets/Clean Vector Icons/T_7_arrow_left_.png.meta
+    - Assets/Clean Vector Icons/T_7_book_.png
+    - Assets/Clean Vector Icons/T_7_book_.png.meta
+    - Assets/Clean Vector Icons/T_7_bottle_heal_.png
+    - Assets/Clean Vector Icons/T_7_bottle_heal_.png.meta
+    - Assets/Clean Vector Icons/T_7_cloud&sun_.png
+    - Assets/Clean Vector Icons/T_7_cloud&sun_.png.meta
+    - Assets/Clean Vector Icons/T_7_continue_mirror_.png
+    - Assets/Clean Vector Icons/T_7_continue_mirror_.png.meta
+    - Assets/Clean Vector Icons/T_7_cursor_question_al_.png
+    - Assets/Clean Vector Icons/T_7_cursor_question_al_.png.meta
+    - Assets/Clean Vector Icons/T_7_head_scull_enemy_.png
+    - Assets/Clean Vector Icons/T_7_head_scull_enemy_.png.meta
+    - Assets/Clean Vector Icons/T_7_plant1_.png
+    - Assets/Clean Vector Icons/T_7_plant1_.png.meta
+    - Assets/Clean Vector Icons/T_7_question_.png
+    - Assets/Clean Vector Icons/T_7_question_.png.meta
+    - Assets/Clean Vector Icons/T_7_waraxe_.png
+    - Assets/Clean Vector Icons/T_7_waraxe_.png.meta
+    - Assets/Clean Vector Icons/T_8_arrow_right_.png
+    - Assets/Clean Vector Icons/T_8_arrow_right_.png.meta
+    - Assets/Clean Vector Icons/T_8_bottle_magic_.png
+    - Assets/Clean Vector Icons/T_8_bottle_magic_.png.meta
+    - Assets/Clean Vector Icons/T_8_cloud_up_.png
+    - Assets/Clean Vector Icons/T_8_cloud_up_.png.meta
+    - Assets/Clean Vector Icons/T_8_cursor_heart_al_.png
+    - Assets/Clean Vector Icons/T_8_cursor_heart_al_.png.meta
+    - Assets/Clean Vector Icons/T_8_heart_.png
+    - Assets/Clean Vector Icons/T_8_heart_.png.meta
+    - Assets/Clean Vector Icons/T_8_pause_.png
+    - Assets/Clean Vector Icons/T_8_pause_.png.meta
+    - Assets/Clean Vector Icons/T_8_plant2_.png
+    - Assets/Clean Vector Icons/T_8_plant2_.png.meta
+    - Assets/Clean Vector Icons/T_8_silhouette_.png
+    - Assets/Clean Vector Icons/T_8_silhouette_.png.meta
+    - Assets/Clean Vector Icons/T_8_staff_.png
+    - Assets/Clean Vector Icons/T_8_staff_.png.meta
+    - Assets/Clean Vector Icons/T_8_tab_.png
+    - Assets/Clean Vector Icons/T_8_tab_.png.meta
+    - Assets/Clean Vector Icons/T_9_arrow_rounded_up_.png
+    - Assets/Clean Vector Icons/T_9_arrow_rounded_up_.png.meta
+    - Assets/Clean Vector Icons/T_9_bottle_eye_.png
+    - Assets/Clean Vector Icons/T_9_bottle_eye_.png.meta
+    - Assets/Clean Vector Icons/T_9_cloud_down_.png
+    - Assets/Clean Vector Icons/T_9_cloud_down_.png.meta
+    - Assets/Clean Vector Icons/T_9_cursor_eye_al_.png
+    - Assets/Clean Vector Icons/T_9_cursor_eye_al_.png.meta
+    - Assets/Clean Vector Icons/T_9_eye_.png
+    - Assets/Clean Vector Icons/T_9_eye_.png.meta
+    - Assets/Clean Vector Icons/T_9_flag_.png
+    - Assets/Clean Vector Icons/T_9_flag_.png.meta
+    - Assets/Clean Vector Icons/T_9_kunai_.png
+    - Assets/Clean Vector Icons/T_9_kunai_.png.meta
+    - Assets/Clean Vector Icons/T_9_next_.png
+    - Assets/Clean Vector Icons/T_9_next_.png.meta
+    - Assets/Clean Vector Icons/T_9_plant3_.png
+    - Assets/Clean Vector Icons/T_9_plant3_.png.meta
+    - Assets/Clean Vector Icons/T_9_silhouette_+_.png
+    - Assets/Clean Vector Icons/T_9_silhouette_+_.png.meta
+    - Assets/Clean Vector Icons/Update.meta
+    - Assets/Clean Vector Icons/Update/Bonus_Confused.png
+    - Assets/Clean Vector Icons/Update/Bonus_Confused.png.meta
+    - Assets/Clean Vector Icons/Update/Bonus_Handshake.png
+    - Assets/Clean Vector Icons/Update/Bonus_Handshake.png.meta
+    - Assets/Clean Vector Icons/Update/Bonus_Laughing.png
+    - Assets/Clean Vector Icons/Update/Bonus_Laughing.png.meta
+    - Assets/Clean Vector Icons/Update/Bonus_PokerFace.png
+    - Assets/Clean Vector Icons/Update/Bonus_PokerFace.png.meta
+    - Assets/Clean Vector Icons/Update/Bonus_Sad.png
+    - Assets/Clean Vector Icons/Update/Bonus_Sad.png.meta
+    - Assets/Clean Vector Icons/Update/Bonus_Sneezing.png
+    - Assets/Clean Vector Icons/Update/Bonus_Sneezing.png.meta
+    - Assets/Clean Vector Icons/Update/Bonus_Yell.png
+    - Assets/Clean Vector Icons/Update/Bonus_Yell.png.meta
+    - Assets/Clean Vector Icons/Update/Bonus_coughing.png
+    - Assets/Clean Vector Icons/Update/Bonus_coughing.png.meta
+    - Assets/Clean Vector Icons/Update/bonus_01.png
+    - Assets/Clean Vector Icons/Update/bonus_01.png.meta
+    - Assets/Clean Vector Icons/Update/bonus_02.png
+    - Assets/Clean Vector Icons/Update/bonus_02.png.meta
+    - Assets/Clean Vector Icons/Update/bonus_03.png
+    - Assets/Clean Vector Icons/Update/bonus_03.png.meta
+    - Assets/Clean Vector Icons/Update/bonus_04.png
+    - Assets/Clean Vector Icons/Update/bonus_04.png.meta
+    - Assets/Clean Vector Icons/Update/bonus_05.png
+    - Assets/Clean Vector Icons/Update/bonus_05.png.meta
+    - Assets/Clean Vector Icons/Update/bonus_06.png
+    - Assets/Clean Vector Icons/Update/bonus_06.png.meta
+    - Assets/Clean Vector Icons/Update/bonus_07.png
+    - Assets/Clean Vector Icons/Update/bonus_07.png.meta
+    - Assets/Images.meta
+    - Assets/Images/fondo.jpg
+    - Assets/Images/fondo.jpg.meta
+    - Assets/Images/image.jpg
+    - Assets/Images/image.jpg.meta
+    - Assets/Images/image2.jpg
+    - Assets/Images/image2.jpg.meta
+    - Assets/Images/image3.jpg
+    - Assets/Images/image3.jpg.meta
+    - Assets/Scenes.meta
+    - Assets/Scenes/Crear_Seguir_Partida.unity
+    - Assets/Scenes/Crear_Seguir_Partida.unity.meta
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scenes/SampleScene.unity.meta
+    - Assets/Scenes/optionScene.unity
+    - Assets/Scenes/optionScene.unity.meta
+    - Assets/Scripts.meta
+    - Assets/Scripts/ClosePopup.cs
+    - Assets/Scripts/ClosePopup.cs.meta
+    - Assets/Scripts/LoadScene.cs
+    - Assets/Scripts/LoadScene.cs.meta
+    - Assets/Scripts/LogicFullScren.cs
+    - Assets/Scripts/LogicFullScren.cs.meta
+    - Assets/Scripts/OpenCanvas.cs
+    - Assets/Scripts/OpenCanvas.cs.meta
+    - Assets/Simple Fantasy GUI.meta
+    - Assets/Simple Fantasy GUI/Font.meta
+    - Assets/Simple Fantasy GUI/Font/MedievalSharp.ttf
+    - Assets/Simple Fantasy GUI/Font/MedievalSharp.ttf.meta
+    - Assets/Simple Fantasy GUI/PNG.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Bar.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/CharacterDemo.png
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/CharacterDemo.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Character_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Character_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Health.png
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Health.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/HealthMana_Cover.png
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/HealthMana_Cover.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Mana.png
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Mana.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Player_Frame.png
+    - Assets/Simple Fantasy GUI/PNG/Character Bar/Player_Frame.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Blue_Ribbon.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Blue_Ribbon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/CharacterDemo.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/CharacterDemo.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Character_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Character_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Eq_Slot.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Eq_Slot.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Minus_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Minus_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Nickname_Slot.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Nickname_Slot.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Plus_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Plus_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Red_Ribbon.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Red_Ribbon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Stats_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Stats_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Violet_Ribbon.png
+    - Assets/Simple Fantasy GUI/PNG/Character Panel/Violet_Ribbon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Accept_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Accept_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Armor_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Armor_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Boots_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Boots_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Close_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Close_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Coin_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Coin_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Comleted_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Comleted_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Crystal_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Crystal_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Helmet_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Helmet_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Minus_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Minus_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Plus_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Plus_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Shield_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Shield_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Icons/Sword_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Icons/Sword_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Close_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Close_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Coin_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Coin_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/InventoryDemo.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/InventoryDemo.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Inventory_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Inventory_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Inventory_Slot.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Inventory_Slot.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Inventory_Slots.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Inventory_Slots.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Money_Bar.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Money_Bar.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Title_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Inventory/Title_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar.meta
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/Background_Bar.png
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/Background_Bar.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/Decoration.png
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/Decoration.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/LoadingDemo.png
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/LoadingDemo.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/Progress_Bar.png
+    - Assets/Simple Fantasy GUI/PNG/Loading Bar/Progress_Bar.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Login Panel.meta
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginButton.png
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginButton.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginButton_Hover.png
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginButton_Hover.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginButton_Pressed.png
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginButton_Pressed.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginDemo.png
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginDemo.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginPassword_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/LoginPassword_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/Login_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Login Panel/Login_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel.meta
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/Button.png
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/Button.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/ButtonShadow.png
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/ButtonShadow.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/MenuDemo.png
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/MenuDemo.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/Menu_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Menu Panel/Menu_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel.meta
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Comleted_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Comleted_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Crystal_Icon.png
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Crystal_Icon.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Progress_Slot.png
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Progress_Slot.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/QuestDemo.png
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/QuestDemo.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Quest_Box.png
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Quest_Box.png.meta
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Reward_Slot.png
+    - Assets/Simple Fantasy GUI/PNG/Quest Panel/Reward_Slot.png.meta
+    - Assets/Simple Fantasy GUI/PSD.meta
+    - Assets/Simple Fantasy GUI/PSD/Characer_Panel.psd
+    - Assets/Simple Fantasy GUI/PSD/Characer_Panel.psd.meta
+    - Assets/Simple Fantasy GUI/PSD/Character_Bar.psd
+    - Assets/Simple Fantasy GUI/PSD/Character_Bar.psd.meta
+    - Assets/Simple Fantasy GUI/PSD/Inventory_Box.psd
+    - Assets/Simple Fantasy GUI/PSD/Inventory_Box.psd.meta
+    - Assets/Simple Fantasy GUI/PSD/Loading_Bar.psd
+    - Assets/Simple Fantasy GUI/PSD/Loading_Bar.psd.meta
+    - Assets/Simple Fantasy GUI/PSD/Login_Bar.psd
+    - Assets/Simple Fantasy GUI/PSD/Login_Bar.psd.meta
+    - Assets/Simple Fantasy GUI/PSD/Menu_Bar.psd
+    - Assets/Simple Fantasy GUI/PSD/Menu_Bar.psd.meta
+    - Assets/Simple Fantasy GUI/PSD/Quest_Panel.psd
+    - Assets/Simple Fantasy GUI/PSD/Quest_Panel.psd.meta
+    - Assets/Simple Fantasy GUI/PSD/Simple_Fantasy_GUI_ALL.psd
+    - Assets/Simple Fantasy GUI/PSD/Simple_Fantasy_GUI_ALL.psd.meta
+    - Assets/Simple Fantasy GUI/Scenes.meta
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene1.unity
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene1.unity.meta
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene1Settings.lighting
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene1Settings.lighting.meta
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene2.unity
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene2.unity.meta
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene2Settings.lighting
+    - Assets/Simple Fantasy GUI/Scenes/DemoScene2Settings.lighting.meta
+    - Assets/TextMesh Pro.meta
+    - Assets/TextMesh Pro/Documentation.meta
+    - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
+    - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+    - Assets/TextMesh Pro/Fonts.meta
+    - Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+    - Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+    - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+    - Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+    - Assets/TextMesh Pro/Resources.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+    - Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+    - Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+    - Assets/TextMesh Pro/Shaders.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMPro.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+    - Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+    - Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+    - Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+    - Assets/TextMesh Pro/Sprites.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.png
+    - Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/AudioManager.asset
+    - ProjectSettings/ClusterInputManager.asset
+    - ProjectSettings/DynamicsManager.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/EditorSettings.asset
+    - ProjectSettings/GraphicsSettings.asset
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/NavMeshAreas.asset
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/PresetManager.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/QualitySettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/TimeManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - ProjectSettings/VFXManager.asset
+    - ProjectSettings/VersionControlSettings.asset
+    - 
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
