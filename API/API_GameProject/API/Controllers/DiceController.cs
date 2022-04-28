@@ -25,7 +25,7 @@ namespace API.Controllers
 
         // GET dice/5
         [HttpGet("{id}")]
-        public Dice Get(string id)
+        public Dice Get(int id)
         {
             UserService objUserService = new UserService();
             return objUserService.GetDice(id);
@@ -49,7 +49,7 @@ namespace API.Controllers
 
         // DELETE dice/5
         [HttpDelete("{id}")]
-        public void Delete(string id)
+        public void Delete(int id)
         {
             UserService objUserService = new UserService();
             objUserService.DeleteDice(id);
