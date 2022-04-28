@@ -1,0 +1,176 @@
+<p>Como bárbaro, obtienes los siguientes rasgos de clase.</p>
+<h3>Puntos de golpe</h3>
+<p><strong>Dados de Golpe:</strong> 1d12 por nivel de bárbaro.<br><strong>Puntos de Golpe a nivel 1:</strong> 12 + tu modificador por Constitución.<br><strong>Puntos de Golpe a niveles superiores:</strong> 1d12 (o 7) + tu modificador por Constitución por cada nivel de bárbaro por encima del primero.</p>
+<h3>Competencias</h3>
+<p><strong>Armadura:</strong> armaduras ligeras y medias, escudos.<br><strong>Armas:</strong> armas sencillas y marciales.<br><strong>Herramientas:</strong> ninguna.<br><strong>Tiradas de salvación:</strong> Fuerza, Constitución.<br><strong>Habilidades:</strong> elige dos de entre Atletismo, Intimidación, Naturaleza, Percepción, Supervivencia y Trato con Animales.</p>
+<h3>Equipo</h3>
+<p>Además del que obtengas por tu trasfondo, empiezas con el siguiente equipo:</p>
+<ul>
+<li>(a) Un Hacha a Dos Manos o (b) cualquier arma cuerpo a cuerpo marcial.</li>
+<li>(a) Dos Hachas de Mano o (b) cualquier arma sencilla.</li>
+<li>Un paquete de explorador y cuatro Jabalinas.</li>
+</ul>
+<h1>El bárbaro</h1>
+<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">
+<thead>
+<tr>
+<td height=\"17\">Nivel</td>
+<td>Bon. por competencia</td>
+<td>Rasgos</td>
+<td>N° furias</td>
+<td>Daño por furia</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td height=\"17\">1</td>
+<td>+2</td>
+<td>@Compendium[dnd5e.classfeatures.VoR0SUrNX5EJVPIO]{Furia}, @Compendium[dnd5e.classfeatures.SZbsNbaxFFGwBpNK]{Defensa sin Armadura}</td>
+<td>2</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">2</td>
+<td>+2</td>
+<td>@Compendium[dnd5e.classfeatures.SCVjqRdlZ9cvHVSR]{Ataque Temerario}, @Compendium[dnd5e.classfeatures.vt31lWAULygEl7yk]{Sentir el Peligro}</td>
+<td>2</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">3</td>
+<td>+2</td>
+<td>@Compendium[dnd5e.classfeatures.TH1QAf6YNGSeBVjT]{Senda Primordial}</td>
+<td>3</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">4</td>
+<td>+2</td>
+<td>@Compendium[dnd5e.classfeatures.s0Cc2zcX0JzIgam5]{Mejora de Característica}</td>
+<td>3</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">5</td>
+<td>+3</td>
+<td>@Compendium[dnd5e.classfeatures.XogoBnFWmCAHXppo]{Ataque Adicional}, @Compendium[dnd5e.classfeatures.Kl6zifJ5OmdHlOi2]{Movimiento
+Rápido}</td>
+<td>3</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">6</td>
+<td>+3</td>
+<td>Rasgo de Senda</td>
+<td>4</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">7</td>
+<td>+3</td>
+<td>@Compendium[dnd5e.classfeatures.NlXslw4yAqmKZWtN]{Instinto Salvaje}</td>
+<td>4</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">8</td>
+<td>+3</td>
+<td>@Compendium[dnd5e.classfeatures.s0Cc2zcX0JzIgam5]{Mejora de Característica}</td>
+<td>4</td>
+<td>+2</td>
+</tr>
+<tr>
+<td height=\"17\">9</td>
+<td>+4</td>
+<td>@Compendium[dnd5e.classfeatures.L94gyvNpUhUe0rwh]{Crítico Brutal (1 dado)}</td>
+<td>4</td>
+<td>+3</td>
+</tr>
+<tr>
+<td height=\"17\">10</td>
+<td>+4</td>
+<td>Rasgo de Senda</td>
+<td>4</td>
+<td>+3</td>
+</tr>
+<tr>
+<td height=\"17\">11</td>
+<td>+4</td>
+<td>@Compendium[dnd5e.classfeatures.FqfmbPgxiyrWzhYk]{Furia Implacable}</td>
+<td>4</td>
+<td>+3</td>
+</tr>
+<tr>
+<td height=\"17\">12</td>
+<td>+4</td>
+<td>@Compendium[dnd5e.classfeatures.s0Cc2zcX0JzIgam5]{Mejora de Característica}</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr>
+<td height=\"17\">13</td>
+<td>+5</td>
+<td>@Compendium[dnd5e.classfeatures.L94gyvNpUhUe0rwh]{Crítico Brutal (2 dado)}</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr>
+<td height=\"17\">14</td>
+<td>+5</td>
+<td>Rasgo de Senda</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr>
+<td height=\"17\">15</td>
+<td>+5</td>
+<td>@Compendium[dnd5e.classfeatures.l8tUhZ5Pecm9wz7I]{Furia Persistente}</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr>
+<td height=\"17\">16</td>
+<td>+5</td>
+<td>@Compendium[dnd5e.classfeatures.s0Cc2zcX0JzIgam5]{Mejora de Característica}</td>
+<td>5</td>
+<td>+4</td>
+</tr>
+<tr>
+<td height=\"17\">17</td>
+<td>+6</td>
+<td>@Compendium[dnd5e.classfeatures.L94gyvNpUhUe0rwh]{Crítico Brutal (3 dados)}</td>
+<td>6</td>
+<td>+4</td>
+</tr>
+<tr>
+<td height=\"17\">18</td>
+<td>+6</td>
+<td>@Compendium[dnd5e.classfeatures.Q1exex5ALteprrPo]{Poderío
+Indómito}</td>
+<td>6</td>
+<td>+4</td>
+</tr>
+<tr>
+<td height=\"17\">19</td>
+<td>+6</td>
+<td>@Compendium[dnd5e.classfeatures.s0Cc2zcX0JzIgam5]{Mejora de Característica}</td>
+<td>6</td>
+<td>+4</td>
+</tr>
+<tr>
+<td height=\"17\">20</td>
+<td>+6</td>
+<td>@Compendium[dnd5e.classfeatures.jVU4AgqfrFaqgXns]{Campeón Primordial}</td>
+<td>Ilimitadas</td>
+<td>+4</td>
+</tr>
+</tbody>
+</table>
+<h1>Senda Primordial</h1>
+<h2>Senda del Berserker</h2>
+<p>Para ciertos bárbaros la furia es el medio para alcanzar un fin: la violencia. La Senda del Berserker se asienta en una rabia sin cortapisas, cubierta de sangre. Al dejarte llevar por la furia del berserker experimentarás el entusiasmo que proporciona el caos del combate, sin reparar en tu propia seguridad o bienestar.</p>
+<h3>Rasgos de la Senda del Berserker</h3>
+<p>Nivel 3: @Compendium[dnd5e.classfeatures.CkbbAckeCtyHXEnL]{Frenesí}</p>
+<p>Nivel 6: @Compendium[dnd5e.classfeatures.0Jgf8fYY2ExwgQpN]{Furia Irracional}</p>
+<p>Nivel 10: @Compendium[dnd5e.classfeatures.M6VSMzVtKPhh8B0i]{Presencia Intimidante}</p>
+<p>Nivel 14: @Compendium[dnd5e.classfeatures.xzD9zlRP6dUxCtCl]{Represalia}</p>

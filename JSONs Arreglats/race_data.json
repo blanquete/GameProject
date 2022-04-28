@@ -1,0 +1,16 @@
+{
+    "race": {
+        "name": "Dragonborn",
+        "subtype": "Silver",
+        "traits": [
+            {
+                "name": "Damage Resistance - Cold",
+                "description": "You have resistance to the damage type associated with your draconic ancestry."
+            },
+            {
+                "name": "Dragon Ancestor",
+                "description": "Whenever you make a Charisma check when interacting with dragons, your proficiency is doubled if it applies to the check."
+            }
+        ]
+    }
+}
