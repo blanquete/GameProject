@@ -39,6 +39,6 @@ namespace API.DAL.Model
             name = name_;
             last_name = last_name_;
             password = password_;
-        }*/
+        }
     }
 }
