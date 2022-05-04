@@ -62,7 +62,7 @@ public class ApiHelper : MonoBehaviour
                 else
                 {
                     //Obtenim el resultat i el carreguem al Objecte User
-                    user = await Task.Run(async () => await response2.Content.ReadAsHttpRequestMessageAsync<User>());
+                    //user = await Task.Run(async () => await response2.Content.ReadAsHttpRequestMessageAsync<User>());
                     response2.Dispose();
                 }
             }
