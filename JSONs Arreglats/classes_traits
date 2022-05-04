@@ -1,0 +1,24 @@
+{
+    "barbarian_traits" : [
+],
+    "bard_traits" : [
+],
+    "cleric_traits" : [
+],
+    "druid_traits" : [
+],
+    "fighter_traits" : [
+],
+    "monk_traits" : [
+],
+    "paladin_traits" : [
+],
+    "rogue_traits" : [
+],
+    "sorcerer_traits" : [
+],
+    "warlock_traits" : [
+],
+    "wizard_traits" : [
+]
+}
