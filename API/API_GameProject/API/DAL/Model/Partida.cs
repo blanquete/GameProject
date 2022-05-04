@@ -21,11 +21,14 @@ namespace API.DAL.Model
         [BsonElement("name")]
         public string name { get; set; }
 
-        [BsonElement("last_name")]
-        public string last_name { get; set; }
+        [BsonElement("description")]
+        public string description { get; set; }
 
-        [BsonElement("password")]
-        public string password { get; set; }
+        [BsonElement("characters")]
+        public Character[] characters { get; set; }
+
+        [BsonElement("scenes")]
+        public Scene[] scenes { get; set; }
 
         public Partida()
         {

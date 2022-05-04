@@ -34,13 +34,14 @@ namespace API.DAL.Model
             UserService objUserService = new UserService();
             MaxId aux = objUserService.GetMaxId("user");
 
-            Id = aux.max_id;
-            name = "Nom";
-            last_name = "Cognoms";
-            password = "123456";
 
             aux.max_id = aux.max_id + 1;
             objUserService.UpdateMaxId(aux);
+
+            Id = aux.max_id;
+            name = "name";
+            last_name = "last_name";
+            password = "123456";
         }
 
         public User(string name_, string last_name_, string password_)
@@ -55,6 +56,14 @@ namespace API.DAL.Model
 
             aux.max_id = aux.max_id + 1;
             objUserService.UpdateMaxId(aux);
+        }
+
+        public User(int id_, string name_, string last_name_, string password_)
+        {
+            Id = id_;
+            name = name_;
+            last_name = last_name_;
+            password = password_;
         }
 
     }

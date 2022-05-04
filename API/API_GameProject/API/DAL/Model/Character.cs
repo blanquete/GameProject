@@ -10,8 +10,10 @@ namespace API.DAL.Model
 {
     public class Character
     {
+        public ObjectId O_Id { get; set; }
+        public int id { get; set; }
         public string name { get; set; }
-        public Player player { get; set; }
+        public int user_id { get; set; }
         public Race race { get; set; }
         public Type_Class[] type_class { get; set; }
         public string alignment { get; set; }
@@ -26,10 +28,5 @@ namespace API.DAL.Model
         public Details details { get; set; }
         public Weapon[] weapons { get; set; }
         public Spell[] spells { get; set; }
-    }
-
-    public class Player
-    {
-        public string name { get; set; }
     }
 }
