@@ -33,7 +33,7 @@ namespace API.DAL.Model
         /*public Partida()
         {
             name = "Nom";
-            last_name = "Cognoms";
+            /*last_name = "Cognoms";
             password = "123456";
         }
 

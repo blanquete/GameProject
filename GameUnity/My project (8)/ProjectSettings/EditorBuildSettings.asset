@@ -9,12 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Crear_Seguir_Partida.unity
-    guid: f8cce11853011ef4988caa8dd7c26a43
+    path: Assets/Scenes/crearPersonatge.unity
+    guid: b91a49ee24cdd6c4782cc6d04205371d
   - enabled: 1
     path: Assets/Scenes/optionScene.unity
     guid: 208939c414051ff4281b16678365d154
-  - enabled: 1
-    path: Assets/Scenes/crearPartida.unity
-    guid: b91a49ee24cdd6c4782cc6d04205371d
   m_configObjects: {}
