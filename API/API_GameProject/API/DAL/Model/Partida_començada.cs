@@ -8,9 +8,8 @@ using MongoDB.Bson;
 
 namespace API.DAL.Model
 {
-    public class Scene
+    public class Partida_començada
     {
-
         [BsonId]
         public ObjectId O_Id { get; set; }
 
@@ -20,13 +19,13 @@ namespace API.DAL.Model
         [BsonElement("partida_id")]
         public int partida_id { get; set; }
 
-        [BsonElement("image")]
-        public byte[] image { get; set; }
+        [BsonElement("playing")]
+        public bool playing { get; set; }
 
-        [BsonElement("num")]
-        public int num { get; set; }
+        [BsonElement("in_game")]
+        public string in_game { get; set; }
 
-        [BsonElement("monsters")]
-        public Monster [] monsters { get; set; }
+        [BsonElement("last_scene_id")]
+        public int last_scene_id { get; set; }
     }
 }

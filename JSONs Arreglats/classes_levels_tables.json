@@ -1199,13 +1199,896 @@
         
     ],
     "ranger_levels_table" : [
+        {
+            "level" : 1,
+            "competency_bonification" : 2,
+            "traits" : [
+                "Enemigo Predilecto",
+                "Explorador Nato"
+            ]
+        },
+    
+        {
+            "level" : 2,
+            "competency_bonification" : 2,
+            "traits" : [
+                "Estilo de Combate",
+                "Lanzamiento de Conjuros"
+            ]
+        },
+    
+        {
+            "level" : 3,
+            "competency_bonification" : 2,
+            "traits" : [
+                "Arquetipo de Explorador",
+                "Percepción Primigenia"
+            ]
+        },
+    
+        {
+            "level" : 4,
+            "competency_bonification" : 2,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+    
+        {
+            "level" : 5,
+            "competency_bonification" : 3,
+            "traits" : [
+                "Espacio de conjuro de nivel 2",
+                "Ataque Adicional"
+            ]
+        },
+    
+        {
+            "level" : 6,
+            "competency_bonification" : 3,
+            "traits" : [
+                "Mejoras de Enemigo Predilecto",
+                "Mejoras Explorador Nato"
+            ]
+        },
+    
+        {
+            "level" : 7,
+            "competency_bonification" : 3,
+            "traits" : [
+                "Rasgo de Arquetipo de Explorador"
+            ]
+        },
+    
+        {
+            "level" : 8,
+            "competency_bonification" : 3,
+            "traits" : [
+                "Mejora de Característica",
+                "Paso de la Tierra"
+            ]
+        },
+    
+        {
+            "level" : 9,
+            "competency_bonification" : 4,
+            "traits" : [
+                "Espacio de conjuro de nivel 3"
+            ]
+        },
+    
+        {
+            "level" : 10,
+            "competency_bonification" : 4,
+            "traits" : [
+                "Mejora de Explorador Nato",
+                "Esconderse a Plena Vista"
+            ]
+        },
+    
+        {
+            "level" : 11,
+            "competency_bonification" : 4,
+            "traits" : [
+                "Rasgo de Arquetipo de Explorador"
+            ]
+        },
+    
+        {
+            "level" : 12,
+            "competency_bonification" : 4,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+    
+        {
+            "level" : 13,
+            "competency_bonification" : 5,
+            "traits" : [
+                "Espacio de conjuro de nivel 4"
+            ]
+        },
+    
+        {
+            "level" : 14,
+            "competency_bonification" : 5,
+            "traits" : [
+                "Mejora de Enemigo Predilecto",
+                "Desvanecerse"
+            ]
+        },
+    
+        {
+            "level" : 15,
+            "competency_bonification" : 5,
+            "traits" : [
+                "Rasgo de Arquetipo de Explorador"
+            ]
+        },
+    
+        {
+            "level" : 16,
+            "competency_bonification" : 5,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+    
+        {
+            "level" : 17,
+            "competency_bonification" : 6,
+            "traits" : [
+                "Espacio de conjuro de nivel 5"
+            ]
+        },
+    
+        {
+            "level" : 18,
+            "competency_bonification" : 6,
+            "traits" : [
+                "Sentidos Salvajes"
+            ]
+        },
+    
+        {
+            "level" : 19,
+            "competency_bonification" : 6,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+    
+        {
+            "level" : 20,
+            "competency_bonification" : 6,
+            "traits" : [
+                "Azote de Enemigos"
+            ]
+        }
+    
     ],
+    
+    
+    
     "rogue_levels_table" : [
+        {
+            "level": 1,
+            "competency_bonification" : 2,
+            "furtive_attack" : "1d6",
+            "traits": [
+                "Pericia",
+                "Ataque Furtivo",
+                "Jerga de Ladrones"
+            ]
+        },
+        
+        {
+            "level": 2,
+            "competency_bonification" : 2,
+            "furtive_attack" : "1d6",
+            "traits": [
+                "Acción Astuta"
+            ]
+        },
+        
+        {
+            "level": 3,
+            "competency_bonification" : 2,
+            "furtive_attack" : "2d6",
+            "traits": [
+                "Arquetipo de Pícaro"
+            ]
+        },
+        
+        {
+            "level": 4,
+            "competency_bonification" : 2,
+            "furtive_attack" : "2d6",
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 5,
+            "competency_bonification" : 3,
+            "furtive_attack" : "3d6",
+            "traits": [
+                "Esquiva Asombrosa"
+            ]
+        },
+        
+        {
+            "level": 6,
+            "competency_bonification" : 3,
+            "furtive_attack" : "3d6",
+            "traits": [
+                "Pericia"
+            ]
+        },
+        
+        {
+            "level": 7,
+            "competency_bonification" : 3,
+            "furtive_attack" : "4d6",
+            "traits": [
+                "Evasión"
+            ]
+        },
+        
+        {
+            "level": 8,
+            "competency_bonification" : 3,
+            "furtive_attack" : "4d6",
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 9,
+            "competency_bonification" : 4,
+            "furtive_attack" : "5d6",
+            "traits": [
+                "Rasgo de Arquetipo de Pícaro"
+            ]
+        },
+        
+        {
+            "level": 10,
+            "competency_bonification" : 4,
+            "furtive_attack" : "5d6",
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 11,
+            "competency_bonification" : 4,
+            "furtive_attack" : "6d6",
+            "traits": [
+                "Talentos Fiables"
+            ]
+        },
+        
+        {
+            "level": 12,
+            "competency_bonification" : 4,
+            "furtive_attack" : "6d6",
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 13,
+            "competency_bonification" : 5,
+            "furtive_attack" : "7d6",
+            "traits": [
+                "Rasgo de Arquetipo de Pícaro"
+            ]
+        },
+        
+        {
+            "level": 14,
+            "competency_bonification" : 5,
+            "furtive_attack" : "7d6",
+            "traits": [
+                "Sentir sin Ver"
+            ]
+        },
+        
+        {
+            "level": 15,
+            "competency_bonification" : 5,
+            "furtive_attack" : "8d6",
+            "traits": [
+                "Mente Escurridiza"
+            ]
+        },
+        
+        {
+            "level": 16,
+            "competency_bonification" : 5,
+            "furtive_attack" : "8d6",
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 17,
+            "competency_bonification" : 6,
+            "furtive_attack" : "9d6",
+            "traits": [
+                "Rasgo de Arquetipo de Pícaro"
+            ]
+        },
+        
+        {
+            "level": 18,
+            "competency_bonification" : 6,
+            "furtive_attack" : "9d6",
+            "traits": [
+                "Elusivo"
+            ]
+        },
+        
+        {
+            "level": 19,
+            "competency_bonification" : 6,
+            "furtive_attack" : "10d6",
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 20,
+            "competency_bonification" : 6,
+            "furtive_attack" : "10d6",
+            "traits": [
+                "Golpe de Suerte"
+            ]
+        }
+        
     ],
     "sorcerer_levels_table" : [
+        {
+            "level": 1,
+            "competency_bonification" : 2,
+            "sorcery_points": 0,
+            "traits": [
+                "Lanzamiento de Conjuros",
+                "Origen Mágico"
+            ]
+        },
+        
+        {
+            "level": 2,
+            "competency_bonification" : 2,
+            "sorcery_points": 2,
+            "traits": [
+                "Fuente de Magia"
+            ]
+        },
+        
+        {
+            "level": 3,
+            "competency_bonification" : 2,
+            "sorcery_points": 3,
+            "traits": [
+                "Espacio de conjuro de nivel 2",
+                "Metamagia"
+            ]
+        },
+        
+        {
+            "level": 4,
+            "competency_bonification" : 2,
+            "sorcery_points": 4,
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 5,
+            "competency_bonification" : 3,
+            "sorcery_points": 5,
+            "traits": [
+                "Espacio de conjuro de nivel 3"
+            ]
+        },
+        
+        {
+            "level": 6,
+            "competency_bonification" : 3,
+            "sorcery_points": 6,
+            "traits": [
+                "Rasgo de Origen Mágico"
+            ]
+        },
+        
+        {
+            "level": 7,
+            "competency_bonification" : 3,
+            "sorcery_points": 7,
+            "traits": [
+                "Espacio de conjuro de nivel 4"
+            ]
+        },
+        
+        {
+            "level": 8,
+            "competency_bonification" : 3,
+            "sorcery_points": 8,
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 9,
+            "competency_bonification" : 4,
+            "sorcery_points": 9,
+            "traits": [
+                "Espacio de conjuro de nivel 5"
+            ]
+        },
+        
+        {
+            "level": 10,
+            "competency_bonification" : 4,
+            "sorcery_points": 10,
+            "traits": [
+                "Metamagica"
+            ]
+        },
+        
+        {
+            "level": 11,
+            "competency_bonification" : 4,
+            "sorcery_points": 11,
+            "traits": [
+                "Espacio de conjuro de nivel 6"
+            ]
+        },
+        
+        {
+            "level": 12,
+            "competency_bonification" : 4,
+            "sorcery_points": 12,
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 13,
+            "competency_bonification" : 5,
+            "sorcery_points": 13,
+            "traits": [
+                "Espacio de conjuro de nivel 7"
+            ]
+        },
+        
+        {
+            "level": 14,
+            "competency_bonification" : 5,
+            "sorcery_points": 14,
+            "traits": [
+                "Rasgo de Origen Mágico"
+            ]
+        },
+        
+        {
+            "level": 15,
+            "competency_bonification" : 5,
+            "sorcery_points": 15,
+            "traits": [
+                "Espacio de conjuro de nivel 8"
+            ]
+        },
+        
+        {
+            "level": 16,
+            "competency_bonification" : 5,
+            "sorcery_points": 16,
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 17,
+            "competency_bonification" : 6,
+            "sorcery_points": 17,
+            "traits": [
+                "Espacio de conjuro de nivel 9",
+                "Metamagia"
+            ]
+        },
+        
+        {
+            "level": 18,
+            "competency_bonification" : 6,
+            "sorcery_points": 18,
+            "traits": [
+                "Rasgo de Origen Mágico"
+            ]
+        },
+        
+        {
+            "level": 19,
+            "competency_bonification" : 6,
+            "sorcery_points": 19,
+            "traits": [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level": 20,
+            "competency_bonification" : 6,
+            "sorcery_points": 20,
+            "traits": [
+                "Recuperación Mágica"
+            ]
+        }
+        
     ],
     "warlock_levels_table" : [
+        {
+            "level":1,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Patrón Sobrenatural",
+                "Magia del Pacto"
+            ],
+            "known_invocatins" : 0
+        },
+        
+        {
+            "level":2,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Invocaciones Sobrenaturales"
+            ],
+            "known_invocatins" : 2
+        },
+        
+        {
+            "level":3,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Beneficio del Pacto"
+            ],
+            "known_invocatins" : 2
+        },
+        
+        {
+            "level":4,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Mejora de Característica"
+            ],
+            "known_invocatins" : 2
+        },
+        
+        {
+            "level":5,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Espacio de conjuro de nivel 3",
+                "+1 Invocacion"
+            ],
+            "known_invocatins" : 3
+        },
+        
+        {
+            "level":6,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Rasgo de Patrón Sobrenatural"
+            ],
+            "known_invocatins" : 3
+        },
+        
+        {
+            "level":7,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Espacio de conjuro de nivel 4",
+                "+1 Invocacion"
+            ],
+            "known_invocatins" : 4
+        },
+        
+        {
+            "level":8,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Mejora de Característica"
+            ],
+            "known_invocatins" : 4
+        },
+        
+        {
+            "level":9,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Espacio de conjuro de nivel 5",
+                "+1 Invocacion"
+            ],
+            "known_invocatins" : 5
+        },
+        
+        {
+            "level":10,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Rasgo de Patrón Sobrenatural"
+            ],
+            "known_invocatins" : 5
+        },
+        
+        {
+            "level":11,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Arcanum Místico (Conjuro de nivel 6)"
+            ],
+            "known_invocatins" : 5
+        },
+        
+        {
+            "level":12,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Mejora de Característica",
+                "+1 Invocacion"
+            ],
+            "known_invocatins" : 6
+        },
+        
+        {
+            "level":13,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Arcanum Místico (Conjuro de nivel 7)"
+            ],
+            "known_invocatins" : 6
+        },
+        
+        {
+            "level":14,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Rasgo de Patrón Sobrenatural"
+            ],
+            "known_invocatins" : 6
+        },
+        
+        {
+            "level":15,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Arcanum Místico (Conjuro de nivel 8)",
+                "+1 Invocation"
+            ],
+            "known_invocatins" : 7
+        },
+        
+        {
+            "level":16,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Mejora de Característica"
+            ],
+            "known_invocatins" : 7
+        },
+        
+        {
+            "level":17,
+            "bonification_competency" : 6,
+            "traits" : [
+                "Arcanum Místico (Conjuro de nivel 9)"
+            ],
+            "known_invocatins" : 7
+        },
+        
+        {
+            "level":18,
+            "bonification_competency" : 6,
+            "traits" : [
+                "+1 Invocacion"
+            ],
+            "known_invocatins" : 8
+        },
+        
+        {
+            "level":19,
+            "bonification_competency" : 6,
+            "traits" : [
+                "Mejora de Característica"
+            ],
+            "known_invocatins" : 8
+        },
+        
+        {
+            "level":20,
+            "bonification_competency" : 6,
+            "traits" : [
+                "Maestro Sobrenatural"
+            ],
+            "known_invocatins" : 8
+        }
+        
     ],
     "wizard_levels_table" : [
+        {
+            "level":1,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Lanzamiento de Conjuros",
+                "Recuperación Arcana"
+            ]
+        },
+        
+        {
+            "level":2,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Tradición Arcana"
+            ]
+        },
+        
+        {
+            "level":3,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Espacio de conjuro de nivel 2"
+            ]
+        },
+        
+        {
+            "level":4,
+            "bonification_competency" : 2,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level":5,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Espacio de conjuro de nivel 3"
+            ]
+        },
+        
+        {
+            "level":6,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Rasgo de Tradición Arcana"
+            ]
+        },
+        
+        {
+            "level":7,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Espacio de conjuro de nivel 4"
+            ]
+        },
+        
+        {
+            "level":8,
+            "bonification_competency" : 3,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level":9,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Espacio de conjuro de nivel 5"
+            ]
+        },
+        
+        {
+            "level":10,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Rasgo de Tradición Arcana"
+            ]
+        },
+        
+        {
+            "level":11,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Espacio de conjuro de nivel 6"
+            ]
+        },
+        
+        {
+            "level":12,
+            "bonification_competency" : 4,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level":13,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Espacio de conjuro de nivel 7"
+            ]
+        },
+        
+        {
+            "level":14,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Rasgo de Tradición Arcana"
+            ]
+        },
+        
+        {
+            "level":15,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Espacio de conjuro de nivel 8"
+            ]
+        },
+        
+        {
+            "level":16,
+            "bonification_competency" : 5,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level":17,
+            "bonification_competency" : 6,
+            "traits" : [
+                "Espacio de conjuro de nivel 9"
+            ]
+        },
+        
+        {
+            "level":18,
+            "bonification_competency" : 6,
+            "traits" : [
+                "Maestría sobre Conjuros"
+            ]
+        },
+        
+        {
+            "level":19,
+            "bonification_competency" : 6,
+            "traits" : [
+                "Mejora de Característica"
+            ]
+        },
+        
+        {
+            "level":20,
+            "bonification_competency" : 6,
+            "traits" : [
+                "Conjuro Característico (Primer Conjuro)",
+                "Conjuro Característico (Segundo Conjuro)"
+            ]
+        }
     ]
 }

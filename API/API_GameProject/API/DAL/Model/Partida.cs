@@ -16,7 +16,7 @@ namespace API.DAL.Model
         public ObjectId O_Id { get; set; }
 
         [BsonElement("id")]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [BsonElement("name")]
         public string name { get; set; }
@@ -24,24 +24,24 @@ namespace API.DAL.Model
         [BsonElement("description")]
         public string description { get; set; }
 
-        [BsonElement("characters")]
-        public Character[] characters { get; set; }
+        [BsonElement("characters_id")]
+        public int[] characters_id { get; set; }
 
-        [BsonElement("scenes")]
-        public Scene[] scenes { get; set; }
+        [BsonElement("game_master_id")]
+        public int game_master_id { get; set; }
 
-        public Partida()
+        /*public Partida()
         {
             name = "Nom";
             /*last_name = "Cognoms";
-            password = "123456";*/
+            password = "123456";
         }
 
         public Partida(string name_, string last_name_, string password_)
         {
             name = name_;
-            /*last_name = last_name_;
-            password = password_;*/
-        }
+            last_name = last_name_;
+            password = password_;
+        }*/
     }
 }

@@ -1,164 +1,162 @@
 {
-    "level" : 1,
-    "competency_bonification" : 2,
+    "level":1,
+    "bonification_competency" : 2,
     "traits" : [
-        "Sentidos Divinos",
-        "Imponer las Manos"
-    ]
-},
-
-{
-    "level" : 2,
-    "competency_bonification" : 2,
-    "traits" : [
-        "Estilo de Combate",
         "Lanzamiento de Conjuros",
-        "Castigo Divino"
+        "Recuperación Arcana"
     ]
 },
 
 {
-    "level" : 3,
-    "competency_bonification" : 2,
+    "level":2,
+    "bonification_competency" : 2,
     "traits" : [
-        "Salud Divina",
-        "Juramento Sagrado"
+        "Tradición Arcana"
     ]
 },
 
 {
-    "level" : 4,
-    "competency_bonification" : 2,
+    "level":3,
+    "bonification_competency" : 2,
     "traits" : [
-        "Mejora de Característica"
+        "Espacio de conjuro de nivel 2"
     ]
 },
 
 {
-    "level" : 5,
-    "competency_bonification" : 3,
-    "traits" : [
-        "Espacio de conjuro de nivel 2",
-        "Ataque Adicional"
-    ]
-},
-
-{
-    "level" : 6,
-    "competency_bonification" : 3,
-    "traits" : [
-        "Aura de Protección"
-    ]
-},
-
-{
-    "level" : 7,
-    "competency_bonification" : 3,
-    "traits" : [
-        "Rasgo de Juramento Sagrado"
-    ]
-},
-
-{
-    "level" : 8,
-    "competency_bonification" : 3,
+    "level":4,
+    "bonification_competency" : 2,
     "traits" : [
         "Mejora de Característica"
     ]
 },
 
 {
-    "level" : 9,
-    "competency_bonification" : 4,
+    "level":5,
+    "bonification_competency" : 3,
     "traits" : [
         "Espacio de conjuro de nivel 3"
     ]
 },
 
 {
-    "level" : 10,
-    "competency_bonification" : 4,
+    "level":6,
+    "bonification_competency" : 3,
     "traits" : [
-        "Aura de Coraje"
+        "Rasgo de Tradición Arcana"
     ]
 },
 
 {
-    "level" : 11,
-    "competency_bonification" : 4,
-    "traits" : [
-        "Castigo Divino Mejorado"
-    ]
-},
-
-{
-    "level" : 12,
-    "competency_bonification" : 4,
-    "traits" : [
-        "Mejora de Característica"
-    ]
-},
-
-{
-    "level" : 13,
-    "competency_bonification" : 5,
+    "level":7,
+    "bonification_competency" : 3,
     "traits" : [
         "Espacio de conjuro de nivel 4"
     ]
 },
 
 {
-    "level" : 14,
-    "competency_bonification" : 5,
-    "traits" : [
-        "Toque Purificador"
-    ]
-},
-
-{
-    "level" : 15,
-    "competency_bonification" : 5,
-    "traits" : [
-        "Rasgo de Juramento Sagrado"
-    ]
-},
-
-{
-    "level" : 16,
-    "competency_bonification" : 5,
+    "level":8,
+    "bonification_competency" : 3,
     "traits" : [
         "Mejora de Característica"
     ]
 },
 
 {
-    "level" : 17,
-    "competency_bonification" : 6,
+    "level":9,
+    "bonification_competency" : 4,
     "traits" : [
         "Espacio de conjuro de nivel 5"
     ]
 },
 
 {
-    "level" : 18,
-    "competency_bonification" : 6,
+    "level":10,
+    "bonification_competency" : 4,
     "traits" : [
-        "Mejora de Auras"
+        "Rasgo de Tradición Arcana"
     ]
 },
 
 {
-    "level" : 19,
-    "competency_bonification" : 6,
+    "level":11,
+    "bonification_competency" : 4,
+    "traits" : [
+        "Espacio de conjuro de nivel 6"
+    ]
+},
+
+{
+    "level":12,
+    "bonification_competency" : 4,
     "traits" : [
         "Mejora de Característica"
     ]
 },
 
 {
-    "level" : 20,
-    "competency_bonification" : 6,
+    "level":13,
+    "bonification_competency" : 5,
     "traits" : [
-        "Rasgo de Juramento Sagrado"
+        "Espacio de conjuro de nivel 7"
     ]
 },
+
+{
+    "level":14,
+    "bonification_competency" : 5,
+    "traits" : [
+        "Rasgo de Tradición Arcana"
+    ]
+},
+
+{
+    "level":15,
+    "bonification_competency" : 5,
+    "traits" : [
+        "Espacio de conjuro de nivel 8"
+    ]
+},
+
+{
+    "level":16,
+    "bonification_competency" : 5,
+    "traits" : [
+        "Mejora de Característica"
+    ]
+},
+
+{
+    "level":17,
+    "bonification_competency" : 6,
+    "traits" : [
+        "Espacio de conjuro de nivel 9"
+    ]
+},
+
+{
+    "level":18,
+    "bonification_competency" : 6,
+    "traits" : [
+        "Maestría sobre Conjuros"
+    ]
+},
+
+{
+    "level":19,
+    "bonification_competency" : 6,
+    "traits" : [
+        "Mejora de Característica"
+    ]
+},
+
+{
+    "level":20,
+    "bonification_competency" : 6,
+    "traits" : [
+        "Conjuro Característico (Primer Conjuro)"
+    ]
+}
+
+Conjuro Característico (Segundo Conjuro)
