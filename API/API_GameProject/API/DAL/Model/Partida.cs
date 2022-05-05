@@ -33,15 +33,15 @@ namespace API.DAL.Model
         public Partida()
         {
             name = "Nom";
-            last_name = "Cognoms";
-            password = "123456";
+            /*last_name = "Cognoms";
+            password = "123456";*/
         }
 
         public Partida(string name_, string last_name_, string password_)
         {
             name = name_;
-            last_name = last_name_;
-            password = password_;
+            /*last_name = last_name_;
+            password = password_;*/
         }
     }
 }
