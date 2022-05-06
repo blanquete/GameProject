@@ -102,6 +102,27 @@ namespace API.DAL.Model
         public Skill Sleight_of_Hand { get; set; }
         public Skill Animal_Handling { get; set; }
     }
+
+    /*
+    Athletics,
+    Acrobatics,
+    Stealth,
+    Arcana,
+    History,
+    Investigation,
+    Nature,
+    Religion,
+    Insight,
+    Medicine,
+    Perception,
+    Survival,
+    Deception,
+    Intimidation,
+    Performance,
+    Persuasion,
+    Sleight_of_Hand,
+    Animal_Handling
+    */
     public class Skill
     {
         public bool aviable { get; set; }
