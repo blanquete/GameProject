@@ -48,4 +48,36 @@ Un cop ha acabat passa el torn al seguent i aixi fins l'infinit
 
 _____ATAC_____:
 
+A qui ataca?
+    //escull objectiu
+
+Selecciona l'opcio d'atac
+
+    //Utilitza arma?    
+        Quina arama?
+            Quant de mal fa?
+            Te efectes secundaris?
+    
+    //Utilitza Magia (encanteris)?
+        Quina?
+            Quant de mal fa?
+            De quin tipus?
+            Te efectes secundaris
+
+    ¿?Algun pun extra mes a tenir en compte¿?
+
+
+____DEFENSA____:
+
+Esquivo o defenso?
+
+    //Quan de mal em fan?
+        Tinc armadura?
+
+    Calcul defensa total
+
+    Comparacio atac defensa
+        Restar la diferencia de la vida
+
+    //Puc esquivar?
 
