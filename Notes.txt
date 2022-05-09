@@ -1,0 +1,37 @@
+Pseudo-codi partida
+
+
+"Els usuaris entren al joc"
+
+"El GM va a les seves partides, on estan totes activades en les que ell sigui el GM,
+la resta estaran visibles, pero desactivades"
+
+"El GM entra a la partida"
+Activa la partida (Partida_començada.playing = true)
+
+"Als usuaris que formen part de la partida se'ls activa la partida corresponent"
+
+"La gent es va connectant a la partida fins que tothom ha entrat"
+**Podem tenir una array/contador amb el numero de participants total i que comprovi quan entra algu**
+    Quan tothom es dis es dona l'"OK"
+
+            //"El GM pot donar l'"OK" i començar sense que estigui tothom connectat."
+                    ¿?Pot la gent connectar-se despres d'haver començat¿?
+                        ¿¿??Como se gestiona eso¿¿??
+
+**Al rebre l'"OK", la partida es posa en joc (Partida_començada.in_game = true)**
+
+*Es carreguen:*
+    - els personatges dels usuaris 
+        -- races (els trets/habilitats de les races)
+        -- classes (habilitats de les classes)
+        -- items (objectes, armes, armadures)
+    - les escenes
+    - els monstres(?)(si n'hi ha)
+
+"Als usuaris els canvia la pantalla i els apareix l'escena a la que ho van deixar (o la primera si comencen la partida)"
+
+
+
+
+
