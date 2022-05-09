@@ -7,7 +7,7 @@ Pseudo-codi partida
 la resta estaran visibles, pero desactivades"
 
 "El GM entra a la partida"
-Activa la partida (Partida_començada.playing = true)
+Activa la partida (Partida.playing = true)
 
 "Als usuaris que formen part de la partida se'ls activa la partida corresponent"
 
@@ -19,7 +19,7 @@ Activa la partida (Partida_començada.playing = true)
                     ¿?Pot la gent connectar-se despres d'haver començat¿?
                         ¿¿??Como se gestiona eso¿¿??
 
-**Al rebre l'"OK", la partida es posa en joc (Partida_començada.in_game = true)**
+**Al rebre l'"OK", la partida es posa en joc (Partida.in_game = true)**
 
 *Es carreguen:*
     - els personatges dels usuaris 
@@ -29,9 +29,23 @@ Activa la partida (Partida_començada.playing = true)
     - les escenes
     - els monstres(?)(si n'hi ha)
 
-"Als usuaris els canvia la pantalla i els apareix l'escena a la que ho van deixar (o la primera si comencen la partida)"
+"Als usuaris els canvia la pantalla, els apareix l'escena a la que ho van deixar (o la primera si comencen la partida)"
+
+------DURANT EL JOC------:
+
+Comrovem de qui es el torn (Partida.current_user_id) i li activem les opcions que te al seu torn.
+    ¿?//Te un numero concret d'accions
+    ¿?//nomes pot fer una accio (atacar, defensar, moure,...)
+    ¿?//Posem un boto per finalitzar el tron
+
+    La resta s'espera fins que acabi el tron.
+
+Un cop ha acabat passa el torn al seguent i aixi fins l'infinit
 
 
 
+
+
+_____ATAC_____:
 
 

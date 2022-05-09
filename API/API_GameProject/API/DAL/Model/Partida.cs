@@ -42,6 +42,9 @@ namespace API.DAL.Model
         [BsonElement("last_scene_id")]
         public int last_scene_id { get; set; }
 
+        [BsonElement("current_user_id")]
+        public int user_current_id { get; set; }
+
         /*public Partida()
         {
             name = "Nom";
