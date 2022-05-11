@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\LogicFullScren.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\closeGame.cs" />
+    <Compile Include="Assets\Class\RegisterUser.cs" />
+    <Compile Include="Assets\Class\Partida.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
