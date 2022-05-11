@@ -44,19 +44,5 @@ namespace API.DAL.Model
 
         [BsonElement("current_user_id")]
         public int user_current_id { get; set; }
-
-        /*public Partida()
-        {
-            name = "Nom";
-            /*last_name = "Cognoms";
-            password = "123456";
-        }
-
-        public Partida(string name_, string last_name_, string password_)
-        {
-            name = name_;
-            last_name = last_name_;
-            password = password_;
-        }*/
     }
 }
