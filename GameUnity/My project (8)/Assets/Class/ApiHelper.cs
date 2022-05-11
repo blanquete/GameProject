@@ -20,10 +20,17 @@ public class ApiHelper : MonoBehaviour
         return JsonUtility.FromJson<User>(json);
     }
 
-    public async void Start()
+    public static async Task<Partida> GetPartida(int id)
     {
-        User user = await GetUser(7);
-        Debug.Log(user.name);
-        txt.text = user.name;
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "user/" + id);
+        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        StreamReader reader = new StreamReader(response.GetResponseStream());
+        string json = await reader.ReadLineAsync();
+        Debug.Log(json);
+        Debug.Log(request.Address);
+        return JsonUtility.FromJson<Partida>(json);
     }
+
+
+
 }
