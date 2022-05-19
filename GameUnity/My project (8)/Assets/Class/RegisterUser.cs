@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -11,27 +12,45 @@ public class RegisterUser : MonoBehaviour
 {
     EventSystem system;
     public Selectable firstInput;
-    public Text text;
+    public TextMeshProUGUI txtAvis;
+    public InputField txtNickname;
     public InputField txtUsuario;
+    public InputField txtLastName;
+    public InputField txtPassword;
+
+    public Button btn;
     
-    async void Start()
+    void  Start()
     {
         system = EventSystem.current;
         firstInput.Select(); //Selecciona el primer item i fa un focus.
+    }
 
-        User listUser = await ApiHelper.GetUsers();
-        Debug.Log("entrar");
+    //FUNCIÓN ASOCIADA AL BOTON REGISTER PARA PODER DAR DE ALTA UN USUARIO.
+    public void createUser()
+    {
+        User s = new User();
 
-        foreach (var item in listUser.)
+        s.nickname = txtNickname.text;
+        s.name = txtUsuario.text;
+        s.last_name = txtLastName.text;
+        s.password = txtPassword.text;
+        ApiHelper helper = new ApiHelper();
+        string json = JsonUtility.ToJson(s);
+        StartCoroutine(helper.postRequest(ApiHelper.dataBase + "user", json));
+       
+
+    }
+
+    public void AvisMissatge(bool x)
+    {
+        if (x)
         {
-            if (txtUsuario.text == item.name)
-            {
-                text.text = "El usuario ya existe";
-            }
-            else
-            {
-                Debug.Log("Hola k ase");
-            }
+            txtAvis.text = "L'Usuari s'ha registrat correctament.";
+        }
+        else
+        {
+            txtAvis.text = "Nickname ja existeix.";
         }
     }
 
