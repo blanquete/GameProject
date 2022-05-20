@@ -14,9 +14,3 @@ public class User
 
 }
 
-[Serializable]
-public class UserList<User>
-{
-    public User [] users;
-}
-
