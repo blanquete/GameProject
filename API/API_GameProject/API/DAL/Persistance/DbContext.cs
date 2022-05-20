@@ -61,9 +61,9 @@ namespace API.DAL.Persistance
             return GetInstance().GetCollection<Weapon>("weapon");
         }
 
-        public static IMongoCollection<Type_Class> GetType_Classes()
+        public static IMongoCollection<TypeClass> GetTypeClasses()
         {
-            return GetInstance().GetCollection<Type_Class>("type_class");
+            return GetInstance().GetCollection<TypeClass>("type_class");
         }
 
         public static IMongoCollection<Race> GetRaces()
@@ -80,12 +80,12 @@ namespace API.DAL.Persistance
         {
             return GetInstance().GetCollection<Monster>("monster");
         }
-        /*
-        public static IMongoCollection<--------> Get--------()
+        public static IMongoCollection<Partida> GetPartides()
         {
-            return GetInstance().GetCollection<-------->("--------");
+            return GetInstance().GetCollection<Partida>("partida");
         }
 
+        /*
         public static IMongoCollection<--------> Get--------()
         {
             return GetInstance().GetCollection<-------->("--------");

@@ -20,6 +20,9 @@ namespace API.DAL.Model
         [BsonElement("id")]
         public int Id { get; set; }
 
+        [BsonElement("nickname")]
+        public string nickname { get; set; }
+
         [BsonElement("name")]
         public string name { get; set; }
 
@@ -32,13 +35,9 @@ namespace API.DAL.Model
         public User()
         {
             UserService objUserService = new UserService();
-            MaxId aux = objUserService.GetMaxId("user");
 
-
-            aux.max_id = aux.max_id + 1;
-            objUserService.UpdateMaxId(aux);
-
-            Id = aux.max_id;
+            Id = 0;
+            nickname = "nickname";
             name = "name";
             last_name = "last_name";
             password = "123456";
@@ -47,15 +46,11 @@ namespace API.DAL.Model
         public User(string name_, string last_name_, string password_)
         {
             UserService objUserService = new UserService();
-            MaxId aux = objUserService.GetMaxId("user");
 
-            Id = aux.max_id;
+            Id = 0;
             name = name_;
             last_name = last_name_;
             password = password_;
-
-            aux.max_id = aux.max_id + 1;
-            objUserService.UpdateMaxId(aux);
         }
 
         public User(int id_, string name_, string last_name_, string password_)

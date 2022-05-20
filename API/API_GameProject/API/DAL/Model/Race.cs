@@ -10,14 +10,37 @@ namespace API.DAL.Model
 {
     public class Race
     {
+        [BsonId]
+        public ObjectId O_Id { get; set; }
+
+        [BsonElement("id")]
+        public int Id { get; set; }
+
+        [BsonElement("name")]
         public string name { get; set; }
+
+        [BsonElement("id")]
         public string subtype { get; set; }
+
+        [BsonElement("id")]
         public Race_Trait[] race_traits { get; set; }
     }
 
     public class Race_Trait
     {
+        [BsonId]
+        public ObjectId O_Id { get; set; }
+
+        [BsonElement("id")]
+        public int Id { get; set; }
+
+        [BsonElement("race_id")]
+        public int race_id { get; set; }
+
+        [BsonElement("name")]
         public string name { get; set; }
+
+        [BsonElement("description")]
         public string description { get; set; }
     }
 
