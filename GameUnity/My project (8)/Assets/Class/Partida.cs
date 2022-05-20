@@ -4,10 +4,15 @@ using System;
 [Serializable]
 public class Partida
 {
-    public ObjectId o_Id;
-    public int id;
+    public ObjectId O_Id;
+    public int Id;
     public string name;
-    public string last_name;
-    public string password;
-
+    public string description;
+    public int[] characters_id;
+    public int[] users_id;
+    public int game_master_id;
+    public bool playing;
+    public bool in_game;
+    public int last_scene_id;
+    public int user_current_id;
 }

@@ -1,65 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Net;
-using System.Threading.Tasks;
-using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RegisterUser : MonoBehaviour
+public class Login : MonoBehaviour
 {
-    EventSystem system;
+    EventSystem system; 
     public Selectable firstInput;
-    public static Text t;
+    public Text t;
     public InputField txtNickname;
-    public InputField txtUsuario;
-    public InputField txtLastName;
     public InputField txtPassword;
-
-    public Button btn;
-    public static ApiHelper helper = new ApiHelper();
-    void  Start()
+    void Start()
     {
         system = EventSystem.current;
         firstInput.Select(); //Selecciona el primer item i fa un focus.
     }
 
-    //FUNCIÓN ASOCIADA AL BOTON REGISTER PARA PODER DAR DE ALTA UN USUARIO.
-    public void createUser()
+
+    public async void comprobar()
     {
-        User s = new User();
-
-        s.nickname = txtNickname.text;
-        s.name = txtUsuario.text;
-        s.last_name = txtLastName.text;
-        s.password = txtPassword.text;
-
-      
-        string json = JsonUtility.ToJson(s);
-        StartCoroutine(helper.postRequest(ApiHelper.dataBase + "user", json));
-
-    }
-    public void AvisMissatge(bool x)
-    {
-        if (x)
+        if(txtNickname.text != "" && txtPassword.text != "")
         {
-            t.text = "L'Usuari s'ha registrat correctament.";
+            User u = await ApiHelper.GetUser(txtNickname.text);
+            try
+            {
+                if (u.nickname != null)
+                {
+                    if (u.password == txtPassword.text)
+                    {
+                        SceneManager.LoadScene("SampleScene");
+                    }
+                    else
+                    {
+                        t.text = "Contrasenya incorrecte";
+                    }
+                }
+            }
+            catch (System.Exception e)
+            {
+                t.text = "Usuari incorrecte";
+                Debug.Log(t.text);
+            }
         }
         else
         {
-            t.text = "Nickname ja existeix.";
+            t.text = "Has d'en emplenar tots els camps.";
         }
     }
-
-    //Funció per poder tabular. 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab) && Input.GetKey(KeyCode.LeftShift))
         {
             Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
-            if(next != null)
+            if (next != null)
             {
                 next.Select();
             }
@@ -73,5 +68,4 @@ public class RegisterUser : MonoBehaviour
             }
         }
     }
-
 }
