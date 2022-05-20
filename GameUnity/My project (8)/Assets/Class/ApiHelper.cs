@@ -12,8 +12,41 @@ public class ApiHelper
 {
     public TextMeshProUGUI txt;
     public static string dataBase = "http://campalans-rblanco.somee.com/game/api/";
-    public static RegisterUser ru = new RegisterUser();
-    
+    //public static RegisterUser ru = new RegisterUser();
+    public RegisterUser ru;
+    public ApiHelper(RegisterUser ruSended)
+    {
+        ru = ruSended;
+    }
+
+    public static IEnumerator IAsyncEnumerator(string uri)
+    {
+        UnityWebRequest uwr = UnityWebRequest.Get(uri);
+        yield return  uwr.SendWebRequest();
+        ;
+        if (uwr.result ==  UnityWebRequest.Result.ConnectionError)
+        {
+            Debug.Log("Error While Sending: " + uwr.error);
+        }
+        else
+        {
+            Debug.Log("Received: " + uwr.downloadHandler.text);
+        }
+    }
+
+    public static async Task<User []> GetUsers()
+    {
+       
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "user");
+        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        StreamReader reader = new StreamReader(response.GetResponseStream());
+      
+        string json = await reader.ReadLineAsync();
+        User[] u = JsonHelper.FromJson<User>(json);
+
+        return u;
+
+    }
 
     //COMPROBAR SI L'USUARI EXISTEIX
     public static async Task<User> GetUser(string nickname)
@@ -48,11 +81,14 @@ public class ApiHelper
 
             if (uwr.downloadHandler.text == "false")
             {
+                Debug.Log("Entra false");
                 ru.AvisMissatge(false);
+
 
             }
             else
             {
+                Debug.Log("Entra true");
                 ru.AvisMissatge(true);
             }
         }
