@@ -18,6 +18,9 @@ namespace API.DAL.Model
         [BsonElement("id")]
         public int Id { get; set; }
 
+        [BsonElement("code")]
+        public string code { get; set; }
+
         [BsonElement("name")]
         public string name { get; set; }
 

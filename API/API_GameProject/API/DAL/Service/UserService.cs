@@ -27,7 +27,6 @@ namespace API.DAL.Service
             List<Dice> result = dices.AsQueryable<Dice>().ToList();
             return result;
         }
-
         public Dice GetDice(int Id)
         {
             UserService objUserService = new UserService();
@@ -45,14 +44,12 @@ namespace API.DAL.Service
 
             return null;
         }
-
         public void AddDice(Dice d)
         {
             IMongoCollection<Dice> dices = DbContext.GetDices();
 
             dices.InsertOne(d);
         }
-
         public void UpdateDice(Dice d)
         {
             IMongoCollection<Dice> dices = DbContext.GetDices();
@@ -60,14 +57,13 @@ namespace API.DAL.Service
             var filtre = Builders<Dice>.Filter.Eq(d => d.Id, d.Id);
             var result = dices.ReplaceOne(filtre, d);
         }
-
         public void DeleteDice(int Id)//(ObjectId Id)
         {
             IMongoCollection<Dice> dices = DbContext.GetDices();
 
             //ObjectId ID = new ObjectId(Id);
 
-            var result = dices.DeleteOne(s => s.Id == Id);//(s => s.Id == Id);
+            var result = dices.DeleteOne(d => d.Id == Id);//(s => s.Id == Id);
         }
 
 
@@ -85,7 +81,6 @@ namespace API.DAL.Service
             List<User> result = users.AsQueryable<User>().ToList();
             return result;
         }
-
         public User GetUser(int Id)
         {
             UserService objUserService = new UserService();
@@ -103,14 +98,35 @@ namespace API.DAL.Service
 
             return null;
         }
+        public User GetUser(string nickname)
+        {
+            UserService objUserService = new UserService();
+            List<User> us = objUserService.GetAllUser();
 
+            foreach (User u in us)
+            {
+                if (u.nickname == nickname)
+                {
+                    return u;
+                }
+            }
+
+            return null;
+        }
         public void AddUser(User u)
         {
             IMongoCollection<User> users = DbContext.GetUsers();
 
-            users.InsertOne(u);
-        }
+            UserService objUserService = new UserService();
 
+            MaxId maxId = objUserService.GetMaxId("user");
+
+            u.Id = maxId.max_id;
+
+            users.InsertOne(u);
+
+            objUserService.UpdateMaxId(maxId);
+        }
         public void UpdateUser(User u)
         {
             IMongoCollection<User> users = DbContext.GetUsers();
@@ -118,7 +134,6 @@ namespace API.DAL.Service
             var filtre = Builders<User>.Filter.Eq(u => u.Id, u.Id);
             var result = users.ReplaceOne(filtre, u);
         }
-
         public void DeleteUser(int Id)//(ObjectId Id)
         {
             IMongoCollection<User> users = DbContext.GetUsers();
@@ -143,7 +158,6 @@ namespace API.DAL.Service
             List<MaxId> result = mIds.AsQueryable<MaxId>().ToList();
             return result;
         }
-
         public MaxId GetMaxId(string Id)
         {
             UserService objUserService = new UserService();
@@ -159,22 +173,22 @@ namespace API.DAL.Service
 
             return null;
         }
-
         public void AddMaxId(MaxId mId)
         {
             IMongoCollection<MaxId> mIds = DbContext.GetMaxIds();
 
             mIds.InsertOne(mId);
         }
-
         public void UpdateMaxId(MaxId mId)
         {
             IMongoCollection<MaxId> mIds = DbContext.GetMaxIds();
 
             var filtre = Builders<MaxId>.Filter.Eq(mId => mId.taula, mId.taula);
+
+            mId.max_id += 1;
+
             var result = mIds.ReplaceOne(filtre, mId);
         }
-
         public void DeleteMaxId(string Id)//(ObjectId Id)
         {
             IMongoCollection<MaxId> mIds = DbContext.GetMaxIds();
@@ -182,6 +196,159 @@ namespace API.DAL.Service
             //ObjectId ID = new ObjectId(Id);
 
             var result = mIds.DeleteOne(u => u.taula == Id);
+        }
+
+
+
+        /// <summary>
+        /// PARTIDA
+        /// 
+        ///
+        /// </summary>
+
+        public List<Partida> GetAllPartida()
+        {
+            IMongoCollection<Partida> p = DbContext.GetPartides();
+
+            List<Partida> result = p.AsQueryable<Partida>().ToList();
+            return result;
+        }
+        public Partida GetPartida(int Id)
+        {
+            UserService objUserService = new UserService();
+            List<Partida> ps = objUserService.GetAllPartida();
+
+            foreach (Partida p in ps)
+            {
+                if (p.Id == Id)
+                {
+                    return p;
+                }
+            }
+
+            return null;
+        }
+        public void AddPartida(Partida p)
+        {
+            IMongoCollection<Partida> ps = DbContext.GetPartides();
+
+            ps.InsertOne(p);
+        }
+        public void UpdatePartida(Partida p)
+        {
+            IMongoCollection<Partida> ps = DbContext.GetPartides();
+
+            var filtre = Builders<Partida>.Filter.Eq(pa => pa.Id, p.Id);
+
+            var result = ps.ReplaceOne(filtre, p);
+        }
+        public void DeletePartida(int Id)//(ObjectId Id)
+        {
+            IMongoCollection<Partida> ps = DbContext.GetPartides();
+
+            //ObjectId ID = new ObjectId(Id);
+
+            var result = ps.DeleteOne(p => p.Id == Id);
+        }
+
+
+
+        /// <summary>
+        /// RACE
+        /// 
+        ///
+        /// </summary>
+
+        public List<Race> GetAllRace()
+        {
+            IMongoCollection<Race> r = DbContext.GetRaces();
+
+            List<Race> result = r.AsQueryable<Race>().ToList();
+            return result;
+        }
+        public Race GetRace(int Id)
+        {
+            UserService objUserService = new UserService();
+            List<Race> rs = objUserService.GetAllRace();
+
+            foreach (Race r in rs)
+            {
+                if (r.Id == Id)
+                {
+                    return r;
+                }
+            }
+            return null;
+        }
+        public void AddRace(Race r)
+        {
+            IMongoCollection<Race> rs = DbContext.GetRaces();
+
+            rs.InsertOne(r);
+        }
+        public void UpdateRace(Race r)
+        {
+            IMongoCollection<Race> rs = DbContext.GetRaces();
+
+            var filtre = Builders<Race>.Filter.Eq(ra => ra.Id, r.Id);
+
+            var result = rs.ReplaceOne(filtre, r);
+        }
+        public void DeleteRace(int Id)
+        {
+            IMongoCollection<Race> rs = DbContext.GetRaces();
+
+            var result = rs.DeleteOne(r => r.Id == Id);
+        }
+
+
+
+        /// <summary>
+        /// CLASSE
+        /// 
+        ///
+        /// </summary>
+
+        public List<TypeClass> GetAllTypeClass()
+        {
+            IMongoCollection<TypeClass> c = DbContext.GetTypeClasses();
+
+            List<TypeClass> result = c.AsQueryable<TypeClass>().ToList();
+            return result;
+        }
+        public TypeClass GetTypeClass(int Id)
+        {
+            UserService objUserService = new UserService();
+            List<TypeClass> cs = objUserService.GetAllTypeClass();
+
+            foreach (TypeClass c in cs)
+            {
+                if (c.Id == Id)
+                {
+                    return c;
+                }
+            }
+            return null;
+        }
+        public void AddTypeClass(TypeClass c)
+        {
+            IMongoCollection<TypeClass> cs = DbContext.GetTypeClasses();
+
+            cs.InsertOne(c);
+        }
+        public void UpdateTypeClass(TypeClass c)
+        {
+            IMongoCollection<TypeClass> cs = DbContext.GetTypeClasses();
+
+            var filtre = Builders<TypeClass>.Filter.Eq(cl => cl.Id, c.Id);
+
+            var result = cs.ReplaceOne(filtre, c);
+        }
+        public void DeleteTypeClass(int Id)
+        {
+            IMongoCollection<TypeClass> cs = DbContext.GetTypeClasses();
+
+            var result = cs.DeleteOne(c => c.Id == Id);
         }
     }
 }

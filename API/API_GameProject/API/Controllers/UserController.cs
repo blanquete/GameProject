@@ -32,20 +32,48 @@ namespace API.Controllers
             return objUserService.GetUser(id);
         }
 
+        // GET user/nickname
+        [HttpGet("nickname/{nickname}")]
+        public User Get(string nickname)
+        {
+            UserService objUserService = new UserService();
+            return objUserService.GetUser(nickname);
+        }
+
         // POST user
         [HttpPost]
-        public void Post([FromBody] User u)
+        public bool Post([FromBody] User u)
         {
-            User x = new User("Raul", "Blanco", "12345");
-
             UserService objUserService = new UserService();
-            //objUserService.AddUser(u);
-            objUserService.AddUser(x);
+
+            List<User> users = objUserService.GetAllUser();
+
+            bool nom_unic = true;
+
+            foreach(User us in users)
+            {
+                if(us.nickname == u.nickname)
+                {
+                    nom_unic = false;
+                }
+            }
+
+
+            if(nom_unic)
+            {
+                objUserService.AddUser(u);
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("El nom no era unic");
+            }
+            return false;
         }
 
         // PUT user/5
         [HttpPut("{id}")]
-        public void Put(string id, [FromBody] User u)
+        public void Put(int id, [FromBody] User u)
         {
             UserService objUserService = new UserService();
             objUserService.UpdateUser(u);
