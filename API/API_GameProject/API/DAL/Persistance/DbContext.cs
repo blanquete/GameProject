@@ -10,21 +10,25 @@ using API.DAL.Model;
 namespace API.DAL.Persistance
 {
     /// <summary>
-    /// Aqui es on recuperem les col·leccions de la Base de Dades.
+    /// DbContext:
     /// 
-    /// Primer de tot tenim el GetInstance() per optenir una connexio a la Base de Dades de MongoDB,
-    /// i a partir d'aquest despres tenim un metode per recuperar cada una de les diferents col·leccions.
+    ///     Aqui es on recuperem les col·leccions de la Base de Dades.
+    /// 
+    ///     Primer de tot tenim el GetInstance() per optenir una connexio a la Base de Dades de MongoDB,
+    ///     i a partir d'aquest despres tenim un metode per recuperar cada una de les diferents col·leccions.
     /// 
     /// 
-    /// Els metodes que tenim, per ordre son aquests:
+    ///     Els metodes que tenim, per ordre son aquests:
     /// 
-    /// GetDice                 --> Recupera els diferents Daus que hi ha
-    /// GetSpells               --> Recupera tots els Encanteris
-    /// GetWeapons              --> Recupera totes les Armes
-    /// GetType_Classes         --> Recupera totes les Classes
-    /// GetRaces                --> Recupera totes les Races
-    /// GetCharacters           --> Recupera tots els Personatges
-    /// GetMonsters             --> Recupera tots els Monstres
+    ///     GetDice                 --> Recupera els diferents Daus que hi ha
+    ///     GetSpells               --> Recupera tots els Encanteris
+    ///     GetWeapons              --> Recupera totes les Armes
+    ///     GetType_Classes         --> Recupera totes les Classes
+    ///     GetRaces                --> Recupera totes les Races
+    ///     GetCharacters           --> Recupera tots els Personatges
+    ///     GetMonsters             --> Recupera tots els Monstres
+    ///     GetPartides             --> Recupera totes les Partides
+    ///     GetScenes               --> Recupera totes les Escenes
     /// 
     /// </summary>
     public class DbContext
@@ -85,12 +89,12 @@ namespace API.DAL.Persistance
             return GetInstance().GetCollection<Partida>("partida");
         }
 
-        /*
-        public static IMongoCollection<--------> Get--------()
+        public static IMongoCollection<Scene> GetScenes()
         {
-            return GetInstance().GetCollection<-------->("--------");
+            return GetInstance().GetCollection<Scene>("scene");
         }
 
+        /*
         public static IMongoCollection<--------> Get--------()
         {
             return GetInstance().GetCollection<-------->("--------");

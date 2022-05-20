@@ -19,7 +19,6 @@ namespace API.DAL.Service
         /// 
         ///
         /// </summary>
-
         public List<Dice> GetAllDice()
         {
             IMongoCollection<Dice> dices = DbContext.GetDices();
@@ -57,13 +56,11 @@ namespace API.DAL.Service
             var filtre = Builders<Dice>.Filter.Eq(d => d.Id, d.Id);
             var result = dices.ReplaceOne(filtre, d);
         }
-        public void DeleteDice(int Id)//(ObjectId Id)
+        public void DeleteDice(int Id)
         {
             IMongoCollection<Dice> dices = DbContext.GetDices();
 
-            //ObjectId ID = new ObjectId(Id);
-
-            var result = dices.DeleteOne(d => d.Id == Id);//(s => s.Id == Id);
+            var result = dices.DeleteOne(d => d.Id == Id);
         }
 
 
@@ -73,7 +70,6 @@ namespace API.DAL.Service
         /// 
         ///
         /// </summary>
-
         public List<User> GetAllUser()
         {
             IMongoCollection<User> users = DbContext.GetUsers();
@@ -134,11 +130,9 @@ namespace API.DAL.Service
             var filtre = Builders<User>.Filter.Eq(u => u.Id, u.Id);
             var result = users.ReplaceOne(filtre, u);
         }
-        public void DeleteUser(int Id)//(ObjectId Id)
+        public void DeleteUser(int Id)
         {
             IMongoCollection<User> users = DbContext.GetUsers();
-
-            //ObjectId ID = new ObjectId(Id);
 
             var result = users.DeleteOne(u => u.Id == Id);
         }
@@ -150,7 +144,6 @@ namespace API.DAL.Service
         /// 
         ///
         /// </summary>
-
         public List<MaxId> GetAllMaxId()
         {
             IMongoCollection<MaxId> mIds = DbContext.GetMaxIds();
@@ -189,11 +182,9 @@ namespace API.DAL.Service
 
             var result = mIds.ReplaceOne(filtre, mId);
         }
-        public void DeleteMaxId(string Id)//(ObjectId Id)
+        public void DeleteMaxId(string Id)
         {
             IMongoCollection<MaxId> mIds = DbContext.GetMaxIds();
-
-            //ObjectId ID = new ObjectId(Id);
 
             var result = mIds.DeleteOne(u => u.taula == Id);
         }
@@ -205,7 +196,6 @@ namespace API.DAL.Service
         /// 
         ///
         /// </summary>
-
         public List<Partida> GetAllPartida()
         {
             IMongoCollection<Partida> p = DbContext.GetPartides();
@@ -242,11 +232,9 @@ namespace API.DAL.Service
 
             var result = ps.ReplaceOne(filtre, p);
         }
-        public void DeletePartida(int Id)//(ObjectId Id)
+        public void DeletePartida(int Id)
         {
             IMongoCollection<Partida> ps = DbContext.GetPartides();
-
-            //ObjectId ID = new ObjectId(Id);
 
             var result = ps.DeleteOne(p => p.Id == Id);
         }
@@ -308,7 +296,6 @@ namespace API.DAL.Service
         /// 
         ///
         /// </summary>
-
         public List<TypeClass> GetAllTypeClass()
         {
             IMongoCollection<TypeClass> c = DbContext.GetTypeClasses();
@@ -349,6 +336,56 @@ namespace API.DAL.Service
             IMongoCollection<TypeClass> cs = DbContext.GetTypeClasses();
 
             var result = cs.DeleteOne(c => c.Id == Id);
+        }
+
+
+
+        /// <summary>
+        /// SCENE
+        /// 
+        ///
+        /// </summary>
+
+        public List<Scene> GetAllScene()
+        {
+            IMongoCollection<Scene> s = DbContext.GetScenes();
+
+            List<Scene> result = s.AsQueryable<Scene>().ToList();
+            return result;
+        }
+        public Scene GetScene(int Id)
+        {
+            UserService objUserService = new UserService();
+            List<Scene> ss = objUserService.GetAllScene();
+
+            foreach (Scene s in ss)
+            {
+                if (s.Id == Id)
+                {
+                    return s;
+                }
+            }
+            return null;
+        }
+        public void AddScene(Scene s)
+        {
+            IMongoCollection<Scene> cs = DbContext.GetScenes();
+
+            cs.InsertOne(s);
+        }
+        public void UpdateScene(Scene s)
+        {
+            IMongoCollection<Scene> ss = DbContext.GetScenes();
+
+            var filtre = Builders<Scene>.Filter.Eq(sc => sc.Id, s.Id);
+
+            var result = ss.ReplaceOne(filtre, s);
+        }
+        public void DeleteScene(int Id)
+        {
+            IMongoCollection<Scene> ss = DbContext.GetScenes();
+
+            var result = ss.DeleteOne(s => s.Id == Id);
         }
     }
 }
