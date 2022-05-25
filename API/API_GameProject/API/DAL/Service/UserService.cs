@@ -240,6 +240,40 @@ namespace API.DAL.Service
         }
 
 
+        public void OpenPartida(int Id)
+        {
+            Partida p = GetPartida(Id);
+
+            p.online = true;
+
+            UpdatePartida(p);
+        }
+        public void PlayPartida(int Id)
+        {
+            Partida p = GetPartida(Id);
+
+            p.in_game = true;
+
+            UpdatePartida(p);
+        }
+        public void StopPartida(int Id)
+        {
+            Partida p = GetPartida(Id);
+
+            p.in_game = false;
+
+            UpdatePartida(p);
+        }
+        public void ClosePartida(int Id)
+        {
+            Partida p = GetPartida(Id);
+
+            p.online = false;
+
+            UpdatePartida(p);
+        }
+
+
 
         /// <summary>
         /// RACE
@@ -369,9 +403,9 @@ namespace API.DAL.Service
         }
         public void AddScene(Scene s)
         {
-            IMongoCollection<Scene> cs = DbContext.GetScenes();
+            IMongoCollection<Scene> ss = DbContext.GetScenes();
 
-            cs.InsertOne(s);
+            ss.InsertOne(s);
         }
         public void UpdateScene(Scene s)
         {
@@ -386,6 +420,56 @@ namespace API.DAL.Service
             IMongoCollection<Scene> ss = DbContext.GetScenes();
 
             var result = ss.DeleteOne(s => s.Id == Id);
+        }
+
+
+
+        /// <summary>
+        /// CHARACTER
+        /// 
+        ///
+        /// </summary>
+
+        public List<Character> GetAllCharacter()
+        {
+            IMongoCollection<Character> c = DbContext.GetCharacters();
+
+            List<Character> result = c.AsQueryable<Character>().ToList();
+            return result;
+        }
+        public Character GetCharacter(int Id)
+        {
+            UserService objUserService = new UserService();
+            List<Character> cs = objUserService.GetAllCharacter();
+
+            foreach (Character c in cs)
+            {
+                if (c.Id == Id)
+                {
+                    return c;
+                }
+            }
+            return null;
+        }
+        public void AddCharacter(Character c)
+        {
+            IMongoCollection<Character> cs = DbContext.GetCharacters();
+
+            cs.InsertOne(c);
+        }
+        public void UpdateCharacter(Character c)
+        {
+            IMongoCollection<Character> cs = DbContext.GetCharacters();
+
+            var filtre = Builders<Character>.Filter.Eq(ch => ch.Id, c.Id);
+
+            var result = cs.ReplaceOne(filtre, c);
+        }
+        public void DeleteCharacter(int Id)
+        {
+            IMongoCollection<Character> cs = DbContext.GetCharacters();
+
+            var result = cs.DeleteOne(c => c.Id == Id);
         }
     }
 }

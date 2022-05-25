@@ -23,6 +23,9 @@ namespace API.DAL.Model
         [BsonElement("nickname")]
         public string nickname { get; set; }
 
+        [BsonElement("online")]
+        public bool online { get; set; }
+
         [BsonElement("name")]
         public string name { get; set; }
 
@@ -34,20 +37,19 @@ namespace API.DAL.Model
 
         public User()
         {
-            UserService objUserService = new UserService();
-
             Id = 0;
-            nickname = "nickname";
-            name = "name";
-            last_name = "last_name";
-            password = "123456";
+            nickname = "";
+            online = false;
+            name = "";
+            last_name = "";
+            password = "";
         }
 
-        public User(string name_, string last_name_, string password_)
+        public User(string name_, string nickname_, string last_name_, string password_)
         {
-            UserService objUserService = new UserService();
-
             Id = 0;
+            nickname = nickname_;
+            online = false;
             name = name_;
             last_name = last_name_;
             password = password_;

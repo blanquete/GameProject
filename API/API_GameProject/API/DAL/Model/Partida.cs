@@ -36,8 +36,8 @@ namespace API.DAL.Model
         [BsonElement("game_master_id")]
         public int game_master_id { get; set; }
 
-        [BsonElement("playing")]
-        public bool playing { get; set; }
+        [BsonElement("online")]
+        public bool online { get; set; }
 
         [BsonElement("in_game")]
         public bool in_game { get; set; }
