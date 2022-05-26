@@ -42,7 +42,7 @@ public class RegisterUser : MonoBehaviour
             s.password = txtPassword.text;
 
             string json = JsonUtility.ToJson(s);
-            StartCoroutine(helper.postRequest(ApiHelper.dataBase + "user", json));
+            StartCoroutine(helper.postUser(json));
         }
         else 
         {

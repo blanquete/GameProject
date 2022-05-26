@@ -14,14 +14,10 @@ public class CreacionPersonaje : MonoBehaviour
     public async  void omplirRaces()
     {
         //ApiHelper.getRequest(ApiHelper.dataBase+"user");
-        lista = transform.GetComponent<Dropdown>();
 
-        lista.ClearOptions();
+        TypeClass[] us = await ApiHelper.GetTypeClass();
 
-        User[] us = await ApiHelper.GetUsers();
-        List<string> listString = new List<string>();
-
-        foreach (var u in us)
+        foreach (TypeClass u in us)
         {
             lista.options.Add(new Dropdown.OptionData() {text = u.name});
         }

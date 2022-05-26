@@ -18,7 +18,6 @@ public class ApiHelper
     {
         ru = ruSended;
     }
-
     public static IEnumerator IAsyncEnumerator(string uri)
     {
         UnityWebRequest uwr = UnityWebRequest.Get(uri);
@@ -34,18 +33,21 @@ public class ApiHelper
         }
     }
 
-    public static async Task<User []> GetUsers()
+
+    /// <summary>
+    /// Funció per poder cercar totes les classes.
+    /// </summary>
+    /// <returns> Return array de totes les clases.</returns>
+    public static async Task<TypeClass []> GetTypeClass()
     {
-       
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "user");
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "classes");
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
         StreamReader reader = new StreamReader(response.GetResponseStream());
       
         string json = await reader.ReadLineAsync();
-        User[] u = JsonHelper.FromJson<User>(json);
-
+        Debug.Log(json);
+        TypeClass[] u = JsonHelperOptions.FromJson<TypeClass>(json);
         return u;
-
     }
 
     //COMPROBAR SI L'USUARI EXISTEIX
@@ -59,10 +61,9 @@ public class ApiHelper
     }
 
     //POST CREAR USUARIO Y DAR REGISTRO EN MONGO.
-    public  IEnumerator postRequest(string url, string json)
+    public  IEnumerator postUser(string json)
     {
-        
-        var uwr = new UnityWebRequest(url, "POST");
+        var uwr = new UnityWebRequest(dataBase + "user", "POST");
         byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
         uwr.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         uwr.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
@@ -107,15 +108,36 @@ public class ApiHelper
     }
 
     //Crear Partida
-    public static async Task<Partida> PostPartida(int id)
+    public IEnumerator postPartida(string json)
     {
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "partida/" + id);
-        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-        StreamReader reader = new StreamReader(response.GetResponseStream());
-        string json = await reader.ReadLineAsync();
-        Debug.Log(json);
-        Debug.Log(request.Address);
-        return JsonUtility.FromJson<Partida>(json);
+        var uwr = new UnityWebRequest(dataBase + "partida", "POST");
+        byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
+        uwr.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
+        uwr.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+        uwr.SetRequestHeader("Content-Type", "application/json");
+
+        //Send the request then wait here until it returns
+        yield return uwr.SendWebRequest();
+
+        if (uwr.result == UnityWebRequest.Result.ConnectionError)
+        {
+            Debug.Log("Error While Sending: " + uwr.error);
+        }
+        else
+        {
+            Debug.Log("Received: " + uwr.downloadHandler.text);
+
+            if (uwr.downloadHandler.text == "false")
+            {
+                Debug.Log("Entra false");
+                ru.AvisMissatge(false);
+            }
+            else
+            {
+                Debug.Log("Entra true");
+                ru.AvisMissatge(true);
+            }
+        }
     }
 
 }
