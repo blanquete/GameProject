@@ -31,6 +31,45 @@ namespace API.Controllers
             return objUserService.GetPartida(id);
         }
 
+
+
+
+
+        // GET partida/openPartida/5
+        [HttpGet("openPartida/{id}")]
+        public void OpenPartida(int id, [FromBody] Partida p)
+        {
+            UserService objUserService = new UserService();
+            objUserService.OpenPartida(p.Id);
+        }
+
+        // GET partida/playPartida/5
+        [HttpGet("playPartida/{id}")]
+        public void PlayPartida(int id, [FromBody] Partida p)
+        {
+            UserService objUserService = new UserService();
+            objUserService.PlayPartida(p.Id);
+        }
+
+        // GET partida/closePartida/5
+        [HttpGet("closePartida/{id}")]
+        public void ClosePartida(int id, [FromBody] Partida p)
+        {
+            UserService objUserService = new UserService();
+            objUserService.ClosePartida(p.Id);
+        }
+
+        // GET partida/stopPartida/5
+        [HttpGet("stopPartida/{id}")]
+        public void StopPartida(int id, [FromBody] Partida p)
+        {
+            UserService objUserService = new UserService();
+            objUserService.StopPartida(p.Id);
+        }
+
+
+
+
         // POST partida
         [HttpPost]
         public void Post([FromBody] Partida p)

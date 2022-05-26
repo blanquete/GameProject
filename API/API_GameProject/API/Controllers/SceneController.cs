@@ -11,51 +11,49 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [Route("api/typeclass")]
+    [Route("api/scene")]
     [ApiController]
-    public class TypeClassController : ControllerBase
+    public class SceneController : ControllerBase
     {
-        // GET: user
+        // GET: scene
         [HttpGet]
-        public List<TypeClass> GetAll()
+        public List<Scene> GetAll()
         {
             UserService objUserService = new UserService();
-            return objUserService.GetAllTypeClass();
+            return objUserService.GetAllScene();
         }
 
-        // GET user/5
+        // GET scene/5
         [HttpGet("{id}")]
-        public TypeClass Get(int id)
+        public Scene Get(int id)
         {
             UserService objUserService = new UserService();
-            return objUserService.GetTypeClass(id);
+            return objUserService.GetScene(id);
         }
 
-        // POST user
+        // POST scene
         [HttpPost]
-        public bool Post([FromBody] TypeClass c)
+        public void Post([FromBody] Scene s)
         {
             UserService objUserService = new UserService();
 
-            objUserService.AddTypeClass(c);
-
-            return true;
+            objUserService.AddScene(s);
         }
 
-        // PUT user/5
+        // PUT scene/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] TypeClass c)
+        public void Put(int id, [FromBody] Scene s)
         {
             UserService objUserService = new UserService();
-            objUserService.UpdateTypeClass(c);
+            objUserService.UpdateScene(s);
         }
 
-        // DELETE user/5
+        // DELETE scene/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
             UserService objUserService = new UserService();
-            objUserService.DeleteTypeClass(id);
+            objUserService.DeleteScene(id);
         }
     }
 }

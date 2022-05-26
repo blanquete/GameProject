@@ -14,7 +14,7 @@ namespace API.DAL.Model
         public ObjectId O_Id { get; set; }
 
         [BsonElement("id")]
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [BsonElement("user_id")]
         public int user_id { get; set; }
