@@ -11,6 +11,5 @@ public class User
     public string name;
     public string last_name;
     public string password;
-
 }
 

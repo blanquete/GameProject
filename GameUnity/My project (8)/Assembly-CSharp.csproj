@@ -59,17 +59,19 @@
     <Compile Include="Assets\Class\User.cs" />
     <Compile Include="Assets\Scripts\OpenCanvas.cs" />
     <Compile Include="Assets\Scripts\LoadScene.cs" />
+    <Compile Include="Assets\Class\JsonHelperOptions.cs" />
     <Compile Include="Assets\Class\Login.cs" />
     <Compile Include="Assets\Scripts\ejemplo.cs" />
     <Compile Include="Assets\Scripts\ClosePopup.cs" />
+    <Compile Include="Assets\Class\CreacionPersonaje.cs" />
     <Compile Include="Assets\Class\ApiHelper.cs" />
     <Compile Include="Assets\Scripts\LogicFullScren.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Class\RegisterUser.cs" />
     <Compile Include="Assets\Class\Partida.cs" />
     <Compile Include="Assets\Scripts\closeGame.cs" />
-    <Compile Include="Assets\Class\JsonHelper.cs" />
-    <Compile Include="Assets\Class\CreacionPersonaje.cs" />
+    <Compile Include="Assets\Class\TypeClass.cs" />
+    <Compile Include="Assets\Class\RegisterPartida.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
