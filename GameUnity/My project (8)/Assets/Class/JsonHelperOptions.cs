@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Funció para poder obtener un json, que es comporta com una array, per poder utilizar amb unity.
+/// </summary>
 [Serializable]
 public class JsonHelperOptions
 {

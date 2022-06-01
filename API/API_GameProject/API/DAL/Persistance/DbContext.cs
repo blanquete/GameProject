@@ -7,6 +7,9 @@ using MongoDB.Driver;
 
 using API.DAL.Model;
 
+/// <summary>
+/// Sirve para poder conectar a la BBDD
+/// </summary>
 namespace API.DAL.Persistance
 {
     /// <summary>

@@ -9,6 +9,9 @@ using API.DAL.Persistance;
 
 using Microsoft.AspNetCore.Mvc;
 
+/// <summary>
+/// Controladores sirven para saber en que ruta se encuentra la informacion. 
+/// </summary>
 namespace API.Controllers
 {
     [Route("api/character")]

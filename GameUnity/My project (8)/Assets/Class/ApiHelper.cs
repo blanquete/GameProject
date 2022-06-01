@@ -8,11 +8,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/// <summary>
+/// Classe ApiHelper, classe que serveix per conectarnos a l'API i poder fer GET, POST, UPDATE.
+/// </summary>
 public class ApiHelper
 {
     public TextMeshProUGUI txt;
     public static string dataBase = "http://campalans-rblanco.somee.com/game/api/";
-    //public static RegisterUser ru = new RegisterUser();
     public RegisterUser ru;
     public ApiHelper(RegisterUser ruSended)
     {
@@ -38,7 +40,7 @@ public class ApiHelper
     /// Funció per poder cercar totes les classes.
     /// </summary>
     /// <returns> Return array de totes les clases.</returns>
-    public static async Task<TypeClass []> GetTypeClass()
+    /*public static async Task<TypeClass []> GetTypeClass()
     {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "classes");
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -48,9 +50,13 @@ public class ApiHelper
         Debug.Log(json);
         TypeClass[] u = JsonHelperOptions.FromJson<TypeClass>(json);
         return u;
-    }
+    }*/
 
-    //COMPROBAR SI L'USUARI EXISTEIX
+    /// <summary>
+    /// Funcio per poder comprobar si l'usuari existeix.
+    /// </summary>
+    /// <param name="nickname"></param>
+    /// <returns></returns>
     public static async Task<User> GetUser(string nickname)
     {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "user/nickname/" + nickname);
@@ -60,7 +66,11 @@ public class ApiHelper
         return JsonUtility.FromJson<User>(json);
     }
 
-    //POST CREAR USUARIO Y DAR REGISTRO EN MONGO.
+    /// <summary>
+    /// Post crear usuari.
+    /// </summary>
+    /// <param name="json">string json.</param>
+    /// <returns></returns>
     public  IEnumerator postUser(string json)
     {
         var uwr = new UnityWebRequest(dataBase + "user", "POST");
@@ -95,7 +105,11 @@ public class ApiHelper
         }
     }
     
-    //Obtener partida
+    /// <summary>
+    /// Obtenir partida a traves d'una id (Codi).
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     public static async Task<Partida> GetPartida(int id)
     {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "partida/" + id);
@@ -107,7 +121,11 @@ public class ApiHelper
         return JsonUtility.FromJson<Partida>(json);
     }
 
-    //Crear Partida
+    /// <summary>
+    /// Crear partida
+    /// </summary>
+    /// <param name="json">string json</param>
+    /// <returns></returns>
     public IEnumerator postPartida(string json)
     {
         var uwr = new UnityWebRequest(dataBase + "partida", "POST");
@@ -174,8 +192,6 @@ public class ApiHelper
 
     }
 }*/
-
-
 
 //Obtener un ÚNICO usuario
 /*public static async Task<User> GetUser(int id)
