@@ -19,20 +19,11 @@ namespace API.DAL.Model
         [BsonElement("name")]
         public string name { get; set; }
 
-        [BsonElement("subtype")]
-        public string subtype { get; set; }
+        [BsonElement("description")]
+        public string description { get; set; }
 
-        [BsonElement("level")]
-        public int level { get; set; }
-
-        [BsonElement("hit_die")]
-        public int hit_die { get; set; }
-
-        [BsonElement("spellcasting")]
-        public string spellcasting { get; set; }
-
-        [BsonElement("features")]
-        public Class_Feature[] features { get; set; }
+        [BsonElement("image")]
+        public byte[] image { get; set; }
     }
 
     public class Class_Feature

@@ -67,7 +67,7 @@ namespace API.DAL.Persistance
 
         public static IMongoCollection<TypeClass> GetTypeClasses()
         {
-            return GetInstance().GetCollection<TypeClass>("type_class");
+            return GetInstance().GetCollection<TypeClass>("typeclass");
         }
 
         public static IMongoCollection<Race> GetRaces()

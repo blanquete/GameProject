@@ -79,35 +79,19 @@ namespace API.DAL.Service
         }
         public User GetUser(int Id)
         {
-            UserService objUserService = new UserService();
-            List<User> us = objUserService.GetAllUser();
+            IMongoCollection<User> users = DbContext.GetUsers();
 
-            //ObjectId ID = new ObjectId(Id);
+            User u = users.Find(u => u.Id == Id).FirstOrDefault();
 
-            foreach (User u in us)
-            {
-                if (u.Id == Id)
-                {
-                    return u;
-                }
-            }
-
-            return null;
+            return u;
         }
         public User GetUser(string nickname)
         {
-            UserService objUserService = new UserService();
-            List<User> us = objUserService.GetAllUser();
+            IMongoCollection<User> users = DbContext.GetUsers();
 
-            foreach (User u in us)
-            {
-                if (u.nickname == nickname)
-                {
-                    return u;
-                }
-            }
+            User u = users.Find(u => u.nickname == nickname).FirstOrDefault();
 
-            return null;
+            return u;
         }
         public void AddUser(User u)
         {
@@ -205,18 +189,11 @@ namespace API.DAL.Service
         }
         public Partida GetPartida(int Id)
         {
-            UserService objUserService = new UserService();
-            List<Partida> ps = objUserService.GetAllPartida();
+            IMongoCollection<Partida> partides = DbContext.GetPartides();
 
-            foreach (Partida p in ps)
-            {
-                if (p.Id == Id)
-                {
-                    return p;
-                }
-            }
+            Partida p = partides.Find(p => p.Id == Id).FirstOrDefault();
 
-            return null;
+            return p;
         }
         public void AddPartida(Partida p)
         {
@@ -290,17 +267,11 @@ namespace API.DAL.Service
         }
         public Race GetRace(int Id)
         {
-            UserService objUserService = new UserService();
-            List<Race> rs = objUserService.GetAllRace();
+            IMongoCollection<Race> races = DbContext.GetRaces();
 
-            foreach (Race r in rs)
-            {
-                if (r.Id == Id)
-                {
-                    return r;
-                }
-            }
-            return null;
+            Race r = races.Find(r => r.Id == Id).FirstOrDefault();
+
+            return r;
         }
         public void AddRace(Race r)
         {
@@ -339,17 +310,11 @@ namespace API.DAL.Service
         }
         public TypeClass GetTypeClass(int Id)
         {
-            UserService objUserService = new UserService();
-            List<TypeClass> cs = objUserService.GetAllTypeClass();
+            IMongoCollection<TypeClass> classes = DbContext.GetTypeClasses();
 
-            foreach (TypeClass c in cs)
-            {
-                if (c.Id == Id)
-                {
-                    return c;
-                }
-            }
-            return null;
+            TypeClass c = classes.Find(c => c.Id == Id).FirstOrDefault();
+
+            return c;
         }
         public void AddTypeClass(TypeClass c)
         {
@@ -389,17 +354,11 @@ namespace API.DAL.Service
         }
         public Scene GetScene(int Id)
         {
-            UserService objUserService = new UserService();
-            List<Scene> ss = objUserService.GetAllScene();
+            IMongoCollection<Scene> scenes = DbContext.GetScenes();
 
-            foreach (Scene s in ss)
-            {
-                if (s.Id == Id)
-                {
-                    return s;
-                }
-            }
-            return null;
+            Scene s = scenes.Find(s => s.Id == Id).FirstOrDefault();
+
+            return s;
         }
         public void AddScene(Scene s)
         {
@@ -439,17 +398,11 @@ namespace API.DAL.Service
         }
         public Character GetCharacter(int Id)
         {
-            UserService objUserService = new UserService();
-            List<Character> cs = objUserService.GetAllCharacter();
+            IMongoCollection<Character> characters = DbContext.GetCharacters();
 
-            foreach (Character c in cs)
-            {
-                if (c.Id == Id)
-                {
-                    return c;
-                }
-            }
-            return null;
+            Character ch = characters.Find(c => c.Id == Id).FirstOrDefault();
+
+            return ch;
         }
         public void AddCharacter(Character c)
         {
