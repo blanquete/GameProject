@@ -9,18 +9,18 @@ public class CreacionPersonaje : MonoBehaviour
 
     private void Start()
     {
-        omplirRaces();
+        //omplirRaces();
     }
-    public async  void omplirRaces()
+    public async void omplirRaces()
     {
         //ApiHelper.getRequest(ApiHelper.dataBase+"user");
 
-        TypeClass[] us = await ApiHelper.GetTypeClass();
+        /*TypeClass[] us = await ApiHelper.GetTypeClass();
 
         foreach (TypeClass u in us)
         {
             lista.options.Add(new Dropdown.OptionData() {text = u.name});
         }
+    }*/
     }
-
 }

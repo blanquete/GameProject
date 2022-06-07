@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Clase login, comprobar si usuari i contrasenya existeixen.
+/// </summary>
 public class Login : MonoBehaviour
 {
     EventSystem system; 
@@ -49,6 +52,9 @@ public class Login : MonoBehaviour
             t.text = "Has d'en emplenar tots els camps.";
         }
     }
+    /// <summary>
+    /// Funció per poder fer tabulacions.
+    /// </summary>
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab) && Input.GetKey(KeyCode.LeftShift))

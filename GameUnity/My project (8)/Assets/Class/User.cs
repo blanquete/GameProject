@@ -2,6 +2,9 @@ using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// Clase User
+/// </summary>
 [Serializable]
 public class User
 {

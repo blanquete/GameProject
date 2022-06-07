@@ -43,9 +43,12 @@ public class RegisterUser : MonoBehaviour
 
             string json = JsonUtility.ToJson(s);
             StartCoroutine(helper.postUser(json));
+            //Carga la escena Login
+            SceneManager.LoadScene("Login");
         }
         else 
         {
+            //Mensaje que mostramos por pantalla en caso de error.
             t.text = "Has d'omplir tots els camps.";
         }
     }

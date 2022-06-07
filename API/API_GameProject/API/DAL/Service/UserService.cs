@@ -9,7 +9,10 @@ using MongoDB.Driver;
 using API.DAL.Model;
 using API.DAL.Persistance;
 
-
+/// <summary>
+/// Obtener toda la información de la base de datos.
+/// </summary>
+/// //Se hablan los controladores con los controladores, para obtener los datos de la base de datos
 namespace API.DAL.Service
 {
     public class UserService
