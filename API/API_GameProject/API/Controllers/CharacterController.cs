@@ -34,14 +34,6 @@ namespace API.Controllers
             return objUserService.GetCharacter(id);
         }
 
-        // GET character/nickname
-        [HttpGet("nickname/{nickname}")]
-        public Character Get(string nickname)
-        {
-            UserService objUserService = new UserService();
-            return objUserService.GetCharacter(nickname);
-        }
-
         // POST character
         [HttpPost]
         public void Post([FromBody] Character c)

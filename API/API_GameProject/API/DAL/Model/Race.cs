@@ -19,11 +19,11 @@ namespace API.DAL.Model
         [BsonElement("name")]
         public string name { get; set; }
 
-        [BsonElement("id")]
-        public string subtype { get; set; }
+        [BsonElement("description")]
+        public string description { get; set; }
 
-        [BsonElement("id")]
-        public Race_Trait[] race_traits { get; set; }
+        [BsonElement("image")]
+        public byte[] image { get; set; }
     }
 
     public class Race_Trait
