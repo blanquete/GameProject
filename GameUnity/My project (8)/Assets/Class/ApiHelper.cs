@@ -35,14 +35,37 @@ public class ApiHelper
         }
     }
 
+    public static async Task<int> GetDice()
+    {
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "dice/throw_dice");
+        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        StreamReader reader = new StreamReader(response.GetResponseStream());
+
+        string json = await reader.ReadLineAsync();
+        Debug.Log(json);
+        int i = JsonUtility.FromJson<int>(json);
+        return i;
+    }
+
+    public static async Task<Race[]> GetRace()
+    {
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "race");
+        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        StreamReader reader = new StreamReader(response.GetResponseStream());
+
+        string json = await reader.ReadLineAsync();
+        Debug.Log(json);
+        Race[] u = JsonHelperOptions.FromJson<Race>(json);
+        return u;
+    }
 
     /// <summary>
     /// Funció per poder cercar totes les classes.
     /// </summary>
     /// <returns> Return array de totes les clases.</returns>
-    /*public static async Task<TypeClass []> GetTypeClass()
+    public static async Task<TypeClass []> GetTypeClass()
     {
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "classes");
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(dataBase + "typeclass");
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
         StreamReader reader = new StreamReader(response.GetResponseStream());
       
@@ -50,7 +73,7 @@ public class ApiHelper
         Debug.Log(json);
         TypeClass[] u = JsonHelperOptions.FromJson<TypeClass>(json);
         return u;
-    }*/
+    }
 
     /// <summary>
     /// Funcio per poder comprobar si l'usuari existeix.

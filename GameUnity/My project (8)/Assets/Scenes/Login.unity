@@ -442,7 +442,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -860,6 +860,7 @@ GameObject:
   - component: {fileID: 1028917616}
   - component: {fileID: 1028917615}
   - component: {fileID: 1028917617}
+  - component: {fileID: 1028917618}
   m_Layer: 0
   m_Name: SceneControl
   m_TagString: Untagged
@@ -909,6 +910,18 @@ MonoBehaviour:
   t: {fileID: 162055803}
   txtNickname: {fileID: 856653612}
   txtPassword: {fileID: 1382268241}
+--- !u!114 &1028917618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028917614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2dd947c4822382438f07f509c90a625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1221380701
 GameObject:
   m_ObjectHideFlags: 0

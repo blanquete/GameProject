@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,23 +8,14 @@ public class ejemplo : MonoBehaviour
 {
     [Header("Objeto")]
     public Button drop;
+    public GameObject p;
+    public int n = 0;
 
-    [Header("Estadisticas")]
-
-    public int HP;
-    public int Fuerza;
-    public int Velocidad;
-
-
-    // Start is called before the first frame update
-    void Start()
+    public void RandomGenerate()
     {
-        
+        n = Random.Range(1, 13);
+        p.GetComponent<Text>().text = "" + n;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

@@ -21,7 +21,10 @@ public class Login : MonoBehaviour
         firstInput.Select(); //Selecciona el primer item i fa un focus.
     }
 
-
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     public async void comprobar()
     {
         if(txtNickname.text != "" && txtPassword.text != "")
@@ -33,6 +36,7 @@ public class Login : MonoBehaviour
                 {
                     if (u.password == txtPassword.text)
                     {
+                        PlayerPrefs.SetString("usuario", txtNickname.text);
                         SceneManager.LoadScene("SampleScene");
                     }
                     else

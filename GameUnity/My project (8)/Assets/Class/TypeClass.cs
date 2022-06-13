@@ -4,10 +4,9 @@ using System;
 [Serializable]
 public class TypeClass
 {
-    public ObjectId o_Id;
-    public int id;
-    public string nickname;
+    public ObjectId O_Id;
+    public int Id;
     public string name;
-    public string last_name;
-    public string password;
+    public string description;
+    public byte[] image;
 }
